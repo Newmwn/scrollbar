@@ -1,0 +1,70 @@
+:host {
+  display: block;
+  height: 100%;
+}
+
+.chrome {
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+  &::-webkit-scrollbar-track:hover {
+    background-color: gray
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: hsl(250 15% 60%);
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background-color: hsl(250 15% 27%);
+  }
+
+  &.scrollable {
+    width: 100%;
+    height: 100%;
+    box-shadow: hsl(0 0% 0% / 0.25) 0 0.25em 0.5em;
+    background: hsl(0 0% 100%);
+    overflow: hidden;
+    scrollbar-gutter: stable both-edges;
+
+    &:hover,
+    :active,
+    :focus {
+      overflow: auto;
+    }
+
+    .scrollable-content {
+      margin-left: -8px;
+      width: calc(100% + 16px);
+    }
+  }
+}
+
+.firefox {
+  &.scrollable {
+    width: 100%;
+    height: 100%;
+    box-shadow: hsl(0 0% 0% / 0.25) 0 0.25em 0.5em;
+    background: hsl(0 0% 100%);
+    overflow: hidden;
+    scrollbar-width: thin;
+    scrollbar-gutter: stable both-edges;
+
+    &:hover,
+    :active,
+    :focus {
+      overflow: auto;
+    }
+
+    .scrollable-content {
+      margin-left: -8px;
+      width: calc(100% + 16px);
+    }
+  }
+}
