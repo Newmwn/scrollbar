@@ -1,54 +1,53 @@
-:host {
-  display: block;
-  height: 100%;
-}
+.container {
+  width: 500px;
+  height: 400px;
+  margin: auto;
 
-.chrome {
-  &::-webkit-scrollbar {
-    width: 8px;
-  }
+  .scrollable {
+    @media screen and (-webkit-min-device-pixel-ratio: 0) {
+      &::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+      }
 
-  &::-webkit-scrollbar-track {
-    background-color: transparent;
-  }
+      &::-webkit-scrollbar-track {
+        background-color: transparent;
+      }
 
-  &::-webkit-scrollbar-track:hover {
-    background-color: gray
-  }
+      &::-webkit-scrollbar-track:hover {
+        background-color: gray
+      }
 
-  &::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    background-color: hsl(250 15% 60%);
-  }
+      &::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background-color: hsl(250 15% 60%);
+      }
 
-  &::-webkit-scrollbar-thumb:hover {
-    background-color: hsl(250 15% 27%);
-  }
+      &::-webkit-scrollbar-thumb:hover {
+        background-color: hsl(250 15% 27%);
+      }
 
-  &.scrollable {
-    width: 100%;
-    height: 100%;
-    box-shadow: hsl(0 0% 0% / 0.25) 0 0.25em 0.5em;
-    background: hsl(0 0% 100%);
-    overflow: hidden;
-    scrollbar-gutter: stable both-edges;
+      width: 100%;
+      height: 100%;
+      box-shadow: hsl(0 0% 0% / 0.25) 0 0.25em 0.5em;
+      background: hsl(0 0% 100%);
+      overflow: hidden;
+      scrollbar-gutter: stable both-edges;
 
-    &:hover,
-    :active,
-    :focus {
-      overflow: auto;
+      &:hover,
+      :active,
+      :focus {
+        overflow: auto;
+      }
+
+      & > div {
+        margin-left: -2px;
+        width: calc(100% + 4px);
+      }
     }
 
-    .scrollable-content {
-      margin-left: -8px;
-      width: calc(100% + 16px);
-    }
-  }
-}
-
-.firefox {
-  &.scrollable {
-    width: 100%;
+    @-moz-document url-prefix() {
+      width: 100%;
     height: 100%;
     box-shadow: hsl(0 0% 0% / 0.25) 0 0.25em 0.5em;
     background: hsl(0 0% 100%);
@@ -62,9 +61,10 @@
       overflow: auto;
     }
 
-    .scrollable-content {
+    & > div {
       margin-left: -8px;
-      width: calc(100% + 16px);
+      width: calc(100% + 8px);
+    }
     }
   }
 }
