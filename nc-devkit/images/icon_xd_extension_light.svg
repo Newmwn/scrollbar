@@ -1,0 +1,11 @@
+<svg id="icon_xd_extension_light" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+  <rect id="shape" width="100" height="100" fill="none"/>
+  <g id="icon" transform="translate(13.006)">
+    <path id="background" d="M12.881.61H45.963L74,30.145V87.591A12.937,12.937,0,0,1,61.143,100.61H12.881A12.942,12.942,0,0,1,0,87.591V13.629A12.942,12.942,0,0,1,12.881.61Z" transform="translate(0 -0.61)" fill="#e8e8e8" fill-rule="evenodd"/>
+    <path id="fold" d="M237.139.61V29.92H265.2Z" transform="translate(-191.201 -0.61)" fill="#fc49f2" fill-rule="evenodd" opacity="0.3"/>
+    <g id="icon-2" data-name="icon" transform="translate(-10.013 -5.633)">
+      <path id="Path_20037" data-name="Path 20037" d="M130.37,309.421h-8.037l-5.482-8.791-5.482,8.791h-8.078l9.521-15.3-8.326-13.365h8.037l4.328,6.939,4.286-6.939h8.078l-8.325,13.4,9.48,15.257Z" transform="translate(-82.297 -218.76)" fill="#fc49f2" stroke="rgba(0,0,0,0)" stroke-width="1"/>
+      <path id="Path_20038" data-name="Path 20038" d="M7.448,28.869V19.221q.814.074,1.862.074c4.241,0,7.655-1.064,9.879-3.092a9.251,9.251,0,0,0,2.845-7,8.479,8.479,0,0,0-3.31-6.853C16.655.767,13.63,0,9.44,0a58.3,58.3,0,0,0-9.1.594A.428.428,0,0,0,0,.99v27.88a.4.4,0,0,0,.414.4H7.035a.4.4,0,0,0,.414-.4Zm0-15.362V5.789A13.342,13.342,0,0,1,9.8,5.615c3.052,0,4.81,1.385,4.81,3.76,0,2.647-1.991,4.23-5.353,4.23A15.484,15.484,0,0,1,7.448,13.507Z" transform="translate(73.021 91.265) rotate(180)" fill="#fc49f2" stroke="rgba(0,0,0,0)" stroke-width="1" fill-rule="evenodd"/>
+    </g>
+  </g>
+</svg>

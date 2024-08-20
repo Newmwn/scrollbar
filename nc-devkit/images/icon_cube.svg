@@ -1,0 +1,13 @@
+<svg id="icon_cube" xmlns="http://www.w3.org/2000/svg" width="101.005" height="100" viewBox="0 0 101.005 100">
+  <rect id="shape" width="100" height="100" fill="none"/>
+  <g id="Group_1422" data-name="Group 1422" transform="translate(-1425.844 -275.118)" style="mix-blend-mode: normal;isolation: isolate">
+    <path id="Path_6241" data-name="Path 6241" d="M1426.849,370.373h71.7l28.3-16.961V282.373h-71.706l-28.294,16.975Z" fill="#484848"/>
+    <path id="Path_6242" data-name="Path 6242" d="M1496.1,300.722l0,50.21v.292H1456.38V300.4h.29l39.144.033h.289Z" transform="translate(0.606 0.529)" fill="#dedede"/>
+    <path id="Path_6243" data-name="Path 6243" d="M1521.444,351.637l-24.376,14.61-.437.262V351.094h25.718Z" transform="translate(1.431 2.018)" fill="#dedede"/>
+    <path id="Path_6244" data-name="Path 6244" d="M1524.055,284.155v67.563h-27.425V300.6l.141-.085,26.845-16.1Z" transform="translate(1.431 0.052)" fill="#dedede"/>
+    <path id="Path_6245" data-name="Path 6245" d="M1456.361,299.312V283.657h66.79l-.9.543-25.594,15.357-.068.041h-.08l-39.855.006h-.289Z" transform="translate(0.605 0.038)" fill="#dedede"/>
+    <path id="Path_6246" data-name="Path 6246" d="M1456.439,351.1h.079l39.835.006h.289v15.932h-66.785l.905-.543,25.608-15.354Z" transform="translate(0.062 2.018)" fill="#dedede"/>
+    <path id="Path_6247" data-name="Path 6247" d="M1430.763,299.039l24.369-14.61.437-.262v15.415h-25.711Z" transform="translate(0.062 0.053)" fill="#dedede"/>
+    <path id="Path_6248" data-name="Path 6248" d="M1428.18,367.478l.013-66.757v-.292h27.41v51.126l-.141.085-26.844,16.089-.437.262Z" transform="translate(0.027 0.53)" fill="#dedede"/>
+  </g>
+</svg>

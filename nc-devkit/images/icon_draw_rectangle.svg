@@ -1,0 +1,13 @@
+<svg id="icon_draw-rectangle" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+  <rect id="shape" width="100" height="100" fill="none"/>
+  <g id="draw" transform="translate(-343.484 -408.49)">
+    <g id="rectangle">
+      <rect id="shape-2" data-name="shape" width="48" height="48" transform="translate(388.484 415.489)" fill="none"/>
+      <path id="shape-3" data-name="shape" d="M349.66,327.66H305.5V283.5h44.16Zm-41.562-2.6h38.965V286.1H308.1Z" transform="translate(84.904 134.146)" fill="#787878"/>
+    </g>
+    <path id="line" d="M0,0H1V22H0Z" transform="translate(379.914 441.49)" fill="#787878"/>
+    <path id="line-2" data-name="line" d="M0,0H1V22H0Z" transform="translate(410.414 470.99) rotate(90)" fill="#787878"/>
+    <path id="line-3" data-name="line" d="M0,0H1V22H0Z" transform="translate(379.914 479.49)" fill="#787878"/>
+    <path id="line-4" data-name="line" d="M0,0H1V22H0Z" transform="translate(372.414 470.99) rotate(90)" fill="#787878"/>
+  </g>
+</svg>

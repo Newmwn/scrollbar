@@ -1,0 +1,10 @@
+<svg id="icon_other_extensions_light" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+  <rect id="shape" width="100" height="100" fill="none"/>
+  <path id="background" d="M12.881.61H45.963L74,30.145V87.591A12.937,12.937,0,0,1,61.143,100.61H12.881A12.942,12.942,0,0,1,0,87.591V13.629A12.942,12.942,0,0,1,12.881.61Z" transform="translate(13.006 -0.61)" fill="#e8e8e8" fill-rule="evenodd"/>
+  <path id="fold" d="M237.139.61V29.92H265.2Z" transform="translate(-178.195 -0.61)" fill="#5a6872" fill-rule="evenodd" opacity="0.3"/>
+  <g id="icon" transform="translate(31.5 35.2)">
+    <path id="dot" d="M4.185,0A4.1,4.1,0,0,1,8.37,4,4.1,4.1,0,0,1,4.185,8,4.1,4.1,0,0,1,0,4,4.1,4.1,0,0,1,4.185,0Z" transform="translate(13.315 36.8)" fill="#5a6872"/>
+    <path id="dot-2" data-name="dot" d="M4.185,0A4.1,4.1,0,0,1,8.37,4,4.1,4.1,0,0,1,4.185,8,4.1,4.1,0,0,1,0,4,4.1,4.1,0,0,1,4.185,0Z" transform="translate(1.5 36.8)" fill="#5a6872"/>
+    <path id="dot-3" data-name="dot" d="M4.185,0A4.1,4.1,0,0,1,8.37,4,4.1,4.1,0,0,1,4.185,8,4.1,4.1,0,0,1,0,4,4.1,4.1,0,0,1,4.185,0Z" transform="translate(25.13 36.8)" fill="#5a6872"/>
+  </g>
+</svg>

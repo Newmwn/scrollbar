@@ -1,0 +1,11 @@
+<svg id="icon_fueling" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+  <rect id="shape" width="100" height="100" fill="none"/>
+  <g id="icone_de_fundo_dos_cards_fuel9" data-name="icone de fundo dos cards (fuel9" transform="translate(1 7)">
+    <path id="Path_50128" data-name="Path 50128" d="M16.8,20.338c0,5.337-3.678,9.683-8.2,9.683S.4,25.675.4,20.338C.4,14.985,8.6,3.724,8.6,3.724S16.8,14.985,16.8,20.338Z" transform="translate(-0.397 41.322)" fill="#181818"/>
+    <path id="Path_50422" data-name="Path 50422" d="M14.788,4.19,7.064,13.224l1.8,3.876c2.121,4.611,3.233,5.225,3.233,10.45v9.519h9.685v-9.6a35.753,35.753,0,0,0-3.16-14.789Z" transform="translate(76.219 51.931)" fill="#181818" fill-rule="evenodd"/>
+    <path id="Path_50423" data-name="Path 50423" d="M5.614,22.8,20.667,5.231a10.483,10.483,0,0,1,16.429,0l26,30.346a10.116,10.116,0,0,1,0,12.774L53.51,59.536,37.1,40.358a5.27,5.27,0,0,0-8.222,0L19.307,51.544,5.614,35.577a10.154,10.154,0,0,1,0-12.774Z" transform="translate(25.647 4.833)" fill="#181818" fill-rule="evenodd"/>
+    <path id="Path_50424" data-name="Path 50424" d="M7.367,4.194,4.631,7.387,6.577,9.659c5.6,6.54,14.746,6.54,20.335,0l.98-1.127L25.156,5.338l-.98,1.127a9.437,9.437,0,0,1-14.849,0Z" transform="translate(43.058 51.995)" fill="#181818" fill-rule="evenodd"/>
+    <path id="Path_50425" data-name="Path 50425" d="M5.766,4.022a2.481,2.481,0,0,0-.541,1.571V16.9a2.109,2.109,0,0,0,1.931,2.254A2.09,2.09,0,0,0,9.1,16.9h0V5.593A2.132,2.132,0,0,0,7.185,3.3a1.843,1.843,0,0,0-1.419.7Z" transform="translate(52.3 37.703)" fill="#181818" fill-rule="evenodd"/>
+    <path id="Path_50426" data-name="Path 50426" d="M19.89.728a26,26,0,0,0-4.594.427L5.058,2.786,7.969,14.074l5.717-.657a23.788,23.788,0,0,1,17.073,3.552L39.2,22.4,47.5,12.716,33.158,4.348A26.313,26.313,0,0,0,19.89.728Z" transform="translate(-5.058 -3.728)" fill="#181818" fill-rule="evenodd"/>
+  </g>
+</svg>

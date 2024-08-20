@@ -1,0 +1,7 @@
+<svg id="icon_collapse-right" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+  <g id="icon_collapse" transform="translate(200 249) rotate(180)">
+    <rect id="shape" width="100" height="100" transform="translate(100 149)" fill="none"/>
+    <path id="shape-2" data-name="shape" d="M172,361s35.854,30.872,36,38.753S173.4,437,173.4,437s5.942-19,5.592-38S172,361,172,361Z" transform="translate(361 598) rotate(180)"/>
+    <path id="shape-3" data-name="shape" d="M172,361s35.854,30.872,36,38.753S173.4,437,173.4,437s5.942-19,5.592-38S172,361,172,361Z" transform="translate(319 598) rotate(180)"/>
+  </g>
+</svg>

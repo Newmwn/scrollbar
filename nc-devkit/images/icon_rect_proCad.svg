@@ -1,0 +1,7 @@
+<svg id="icon_rect" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <rect id="bg" width="24" height="24" fill="none"/>
+  <path id="shape" d="M19.6,29.569H4.62C2.348,29.569.5,27.241.5,24.38V14.5H15.481c2.272,0,4.12,2.328,4.12,5.19ZM1.5,15.5v8.88a4.926,4.926,0,0,0,.959,3.007A2.756,2.756,0,0,0,4.62,28.569H18.6V19.69a4.926,4.926,0,0,0-.959-3.007A2.756,2.756,0,0,0,15.481,15.5Z" transform="translate(0 -8.069)" fill="#707070"/>
+  <path id="svg-fill-primary" d="M7.049,1.948h-5.6L2.675.724a.424.424,0,1,0-.6-.6L.124,2.076a.423.423,0,0,0,0,.6L2.076,4.626a.424.424,0,1,0,.6-.6L1.451,2.8h5.6a.425.425,0,0,0,0-.85Z" transform="translate(14.373 14.948) rotate(135)" fill="#efa106"/>
+  <path id="shape-2" data-name="shape" d="M23,15H21v2h2Zm0-4H21v2h2Zm0,8H21v2A2.151,2.151,0,0,0,23,19ZM15,3H13V5h2Zm8,4H21V9h2ZM21,3V5h2A2.151,2.151,0,0,0,21,3ZM19,3H17V5h2ZM3,3A2.151,2.151,0,0,0,1,5H3Zm8,0H9V5h2ZM7,3H5V5H7Z" fill="#787878"/>
+  <path id="svg-fill-primary-2" data-name="svg-fill-primary" d="M1.616.461A4.318,4.318,0,0,1,5.367,4.01c.3,1.686.854,1.6-2.173,1.564S.126,2.669.086,1.491-.267.427,1.616.461Z" transform="translate(14 6)" fill="#efa106"/>
+</svg>

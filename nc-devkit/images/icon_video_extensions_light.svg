@@ -1,0 +1,8 @@
+<svg id="icon_video_extensions_light" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+  <rect id="shape" width="100" height="100" fill="none"/>
+  <g id="icon" transform="translate(13.006)">
+    <path id="background" d="M12.881.61H45.963L74,30.145V87.591A12.937,12.937,0,0,1,61.143,100.61H12.881A12.942,12.942,0,0,1,0,87.591V13.629A12.942,12.942,0,0,1,12.881.61Z" transform="translate(0 -0.61)" fill="#e8e8e8" fill-rule="evenodd"/>
+    <path id="fold" d="M237.139.61V29.92H265.2Z" transform="translate(-191.201 -0.61)" fill="#fa0000" fill-rule="evenodd" opacity="0.3"/>
+    <path id="icon-2" data-name="icon" d="M131.118,232.388a22.615,22.615,0,1,0,22.6,22.632,22.647,22.647,0,0,0-22.6-22.632Zm9.514,23.332a1.853,1.853,0,0,1-.735.735h0l-12.908,6.471a1.622,1.622,0,0,1-2.169-.735,1.276,1.276,0,0,1-.175-.734V248.549a1.6,1.6,0,0,1,1.609-1.609,1.418,1.418,0,0,1,.735.175l12.908,6.436a1.632,1.632,0,0,1,.735,2.169Z" transform="translate(-93.747 -191.052)" fill="#fa0000"/>
+  </g>
+</svg>

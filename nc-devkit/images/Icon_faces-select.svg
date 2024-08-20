@@ -1,0 +1,9 @@
+<svg id="Icon_faces-select" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <rect id="shape" width="24" height="24" fill="none"/>
+  <g id="svg-fill-c-scale-12" transform="translate(3.5 2.18)">
+    <path id="Path_24400" data-name="Path 24400" d="M20.5,7.09v9.82L12.03,21.8v.01l-.03.01-.01-.01L3.5,16.91V7.09L12,2.18Z" transform="translate(-3.5 -2.18)" fill="none" stroke="#737376" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    <path id="Path_24401" data-name="Path 24401" d="M11.99,11.99v9.82L3.5,16.91V7.09Z" transform="translate(-3.5 -2.18)" fill="none" stroke="#737376" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    <path id="Path_24402" data-name="Path 24402" d="M20.5,7.1v9.81L12.03,21.8V11.99Z" transform="translate(-3.5 -2.18)" fill="none" stroke="#737376" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+  </g>
+  <path id="shape-2" data-name="shape" d="M7.129,7.161l4.808,2.776a.127.127,0,0,0,.125,0l4.809-2.776a.126.126,0,0,0,0-.218L12.314,4.31a.631.631,0,0,0-.629,0L7.129,6.943a.126.126,0,0,0,0,.218" fill="#efa106"/>
+</svg>

@@ -1,0 +1,7 @@
+<svg id="icon_manual_measuring" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+  <rect id="shape" width="100" height="100" fill="none"/>
+  <path id="icone" d="M47.068,82.65h-26.1a1.94,1.94,0,0,1-1.788-1.283c-.845-2.308-3.829-7.736-14.325-18.155L.194,36.744a6.055,6.055,0,0,1,11.561-3.562l2.881,12.44V4.9A4.94,4.94,0,0,1,19.573,0h.034a4.826,4.826,0,0,1,4.777,4.874v23.72a4.9,4.9,0,0,1,9.758.6v4.86a4.879,4.879,0,1,1,9.758,0v4.86a4.889,4.889,0,1,1,9.777,0V57.867a5.408,5.408,0,0,1-.1.973L48.988,81.1A1.969,1.969,0,0,1,47.068,82.65Z" transform="translate(32.625 14.35)" fill="#181818" stroke="rgba(0,0,0,0)" stroke-width="1"/>
+  <rect id="Rectangle_1753" data-name="Rectangle 1753" width="25.38" height="8.46" rx="1" transform="translate(13.699 15.69)" fill="#181818"/>
+  <rect id="Rectangle_1756" data-name="Rectangle 1756" width="29.61" height="8.46" rx="1" transform="translate(13.699 3)" fill="#181818"/>
+  <rect id="Rectangle_1755" data-name="Rectangle 1755" width="29.61" height="8.46" rx="1" transform="translate(13.699 28.38)" fill="#181818"/>
+</svg>

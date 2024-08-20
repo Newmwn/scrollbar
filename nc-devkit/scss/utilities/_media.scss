@@ -1,0 +1,20 @@
+$sizeType: "tbu";
+@include setUnit($sizeType);
+
+@mixin media-up($value) {
+  @media (min-width: $value) {
+    @content;
+  }
+}
+@mixin media-down($value) {
+  @media (max-width: $value) {
+    @content;
+  }
+}
+@include media-down(tbu(px(750))) {
+  .teste {
+    height: tbu(px(60));
+    width: tbu(px(60));
+    background: red;
+  }
+}

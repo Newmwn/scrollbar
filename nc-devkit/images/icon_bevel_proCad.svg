@@ -1,0 +1,5 @@
+<svg id="icon_bevel" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <rect id="shape" width="24" height="24" fill="none"/>
+  <path id="svg-fill-c-scale-12" d="M13.344,4.923c-.649-1.042-1.248-2.152-1.9-3.194C10.017.892,9.15.4,9,.318A.542.542,0,0,0,8.75.251.493.493,0,0,0,8.5.318L.5,4.936a.5.5,0,0,0-.25.433v9.238a.5.5,0,0,0,.25.433l8,4.619a.5.5,0,0,0,.5,0l8-4.619c.083-.144.167-.288.25-.433V11.459c-.685-1.2-1.508-2.479-2.193-3.678-.54-.938-1.173-1.92-1.713-2.858" transform="translate(3.25 2.012)" fill="#737376" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+  <path id="Path_24218" data-name="Path 24218" d="M11.177,2.263,3.543,6.671a.5.5,0,0,0-.179.69L8.5,15.925a.5.5,0,0,0,.679.176l7.634-4.408a.5.5,0,0,0,.179-.69L11.856,2.439A.5.5,0,0,0,11.177,2.263Z" transform="translate(3.25 2.012)" fill="#efa106" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+</svg>

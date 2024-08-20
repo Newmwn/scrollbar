@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="98" height="76" viewBox="0 0 98 76">
+  <g id="closeapp-2" transform="translate(-89 0.16)">
+    <g id="image" transform="translate(-695 -276.16)">
+      <path id="workingarea" d="M1,0H87a1,1,0,0,1,1,1V24a3,3,0,0,1-3,3H3a3,3,0,0,1-3-3V1A1,1,0,0,1,1,0Z" transform="translate(789 303)" fill="#fcfcfc"/>
+      <g id="tabs" transform="translate(-264 75)">
+        <path id="shape" d="M1,0H27a1,1,0,0,1,1,1V5a1,1,0,0,1-1,1H1A1,1,0,0,1,0,5V1A1,1,0,0,1,1,0Z" transform="translate(1053 212)" fill="#fcfcfc"/>
+        <path id="shape-2" data-name="shape" d="M1,0H27a1,1,0,0,1,1,1V5a1,1,0,0,1-1,1H1A1,1,0,0,1,0,5V1A1,1,0,0,1,1,0Z" transform="translate(1113 212)" fill="#fcfcfc"/>
+        <path id="shape-3" data-name="shape" d="M1,0H27a1,1,0,0,1,1,1V5a1,1,0,0,1-1,1H1A1,1,0,0,1,0,5V1A1,1,0,0,1,1,0Z" transform="translate(1083 212)" fill="#fcfcfc"/>
+      </g>
+      <g id="Computer" transform="translate(784 276)">
+        <path id="shape-4" data-name="shape" d="M92.181,2H9.819A7.878,7.878,0,0,0,2,9.917l.049,60.167A7.878,7.878,0,0,0,9.868,78h82.2a7.878,7.878,0,0,0,7.819-7.917L100,9.917A7.878,7.878,0,0,0,92.181,2ZM9.819,5.167H92.181a4.721,4.721,0,0,1,4.691,4.75l.049,48.012H5.176L5.128,9.917a4.721,4.721,0,0,1,4.691-4.75ZM92.063,74.833H9.868a4.721,4.721,0,0,1-4.691-4.75V61.1H96.921l-.167,8.988A4.721,4.721,0,0,1,92.063,74.833Z" transform="translate(-2 -2)" fill="#fcfcfc"/>
+        <path id="shape-5" data-name="shape" d="M33.736,41a4.838,4.838,0,1,0,4.736,4.837A4.787,4.787,0,0,0,33.736,41Zm0,6.449a1.613,1.613,0,1,1,1.579-1.612A1.6,1.6,0,0,1,33.736,47.449Z" transform="translate(15.338 20.156)" fill="#fcfcfc"/>
+      </g>
+      <path id="shape-6" data-name="shape" d="M3,0H85a3,3,0,0,1,3,3,1,1,0,0,1-1,1H1A1,1,0,0,1,0,3,3,3,0,0,1,3,0Z" transform="translate(789 281)" fill="#fcfcfc"/>
+      <path id="shape-7" data-name="shape" d="M1,0H79a1,1,0,0,1,1,1V5a1,1,0,0,1-1,1H1A1,1,0,0,1,0,5V1A1,1,0,0,1,1,0Z" transform="translate(789 295)" fill="#fcfcfc"/>
+      <path id="shape-8" data-name="shape" d="M1,0H5A1,1,0,0,1,6,1V5A1,1,0,0,1,5,6H1A1,1,0,0,1,0,5V1A1,1,0,0,1,1,0Z" transform="translate(871 295)" fill="#fcfcfc"/>
+    </g>
+    <g id="image-2" data-name="image" transform="translate(-695 -276.16)">
+      <path id="workingarea-2" data-name="workingarea" d="M1,0H87a1,1,0,0,1,1,1V24a3,3,0,0,1-3,3H3a3,3,0,0,1-3-3V1A1,1,0,0,1,1,0Z" transform="translate(789 303)" fill="#1080b0" opacity="0.5"/>
+      <g id="tabs-2" data-name="tabs" transform="translate(-264 75)">
+        <path id="shape-9" data-name="shape" d="M1,0H27a1,1,0,0,1,1,1V5a1,1,0,0,1-1,1H1A1,1,0,0,1,0,5V1A1,1,0,0,1,1,0Z" transform="translate(1053 212)" fill="#1080b0" opacity="0.5"/>
+        <path id="shape-10" data-name="shape" d="M1,0H27a1,1,0,0,1,1,1V5a1,1,0,0,1-1,1H1A1,1,0,0,1,0,5V1A1,1,0,0,1,1,0Z" transform="translate(1113 212)" fill="#1080b0" opacity="0.5"/>
+        <path id="shape-11" data-name="shape" d="M1,0H27a1,1,0,0,1,1,1V5a1,1,0,0,1-1,1H1A1,1,0,0,1,0,5V1A1,1,0,0,1,1,0Z" transform="translate(1083 212)" fill="#1080b0" opacity="0.5"/>
+      </g>
+      <g id="Computer-2" data-name="Computer" transform="translate(784 276)">
+        <path id="shape-12" data-name="shape" d="M92.181,2H9.819A7.878,7.878,0,0,0,2,9.917l.049,60.167A7.878,7.878,0,0,0,9.868,78h82.2a7.878,7.878,0,0,0,7.819-7.917L100,9.917A7.878,7.878,0,0,0,92.181,2ZM9.819,5.167H92.181a4.721,4.721,0,0,1,4.691,4.75l.049,48.012H5.176L5.128,9.917a4.721,4.721,0,0,1,4.691-4.75ZM92.063,74.833H9.868a4.721,4.721,0,0,1-4.691-4.75V61.1H96.921l-.167,8.988A4.721,4.721,0,0,1,92.063,74.833Z" transform="translate(-2 -2)" fill="#58a7c8"/>
+        <path id="shape-13" data-name="shape" d="M33.736,41a4.838,4.838,0,1,0,4.736,4.837A4.787,4.787,0,0,0,33.736,41Zm0,6.449a1.613,1.613,0,1,1,1.579-1.612A1.6,1.6,0,0,1,33.736,47.449Z" transform="translate(15.338 20.156)" fill="#58a7c8"/>
+      </g>
+      <path id="shape-14" data-name="shape" d="M3,0H85a3,3,0,0,1,3,3,1,1,0,0,1-1,1H1A1,1,0,0,1,0,3,3,3,0,0,1,3,0Z" transform="translate(789 281)" fill="#1080b0" opacity="0.5"/>
+      <path id="shape-15" data-name="shape" d="M1,0H79a1,1,0,0,1,1,1V5a1,1,0,0,1-1,1H1A1,1,0,0,1,0,5V1A1,1,0,0,1,1,0Z" transform="translate(789 295)" fill="#1080b0" opacity="0.5"/>
+      <path id="shape-16" data-name="shape" d="M1,0H5A1,1,0,0,1,6,1V5A1,1,0,0,1,5,6H1A1,1,0,0,1,0,5V1A1,1,0,0,1,1,0Z" transform="translate(871 295)" fill="#1080b0"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,8 @@
+<svg id="icon_underline" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+  <rect id="shape" width="100" height="100" fill="none"/>
+  <g id="Group_3929" data-name="Group 3929" transform="translate(11 3)">
+    <g id="Group_3930" data-name="Group 3930" transform="translate(5 3)">
+      <path id="Path_24473" data-name="Path 24473" d="M42.837,71.2C57.554,69.293,68.143,56,68.143,41.084V9.111A6.072,6.072,0,1,0,56,9.111V41.622c0,8.164-5.489,15.6-13.454,17.209A17,17,0,0,1,22,42.111v-33a6.072,6.072,0,1,0-12.143,0v33A29.241,29.241,0,0,0,42.837,71.2M5,86.111A4.887,4.887,0,0,0,9.857,91H68.143a4.889,4.889,0,0,0,0-9.778H9.857A4.887,4.887,0,0,0,5,86.111" transform="translate(-5 -3)"/>
+    </g>
+  </g>
+</svg>

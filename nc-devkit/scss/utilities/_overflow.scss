@@ -1,0 +1,10 @@
+/*
+Theme Name: Desktop angular compoenents
+Description: overflow auto, hidden
+*/
+
+@each $value in $overflows {
+  .overflow-#{$value} {
+    overflow: $value !important;
+  }
+}

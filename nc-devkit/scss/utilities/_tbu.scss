@@ -1,0 +1,85 @@
+/*
+Theme Name: Desktop angular compoenents
+Description: TBU CONVERTER
+*/
+
+$sizeType: "tbu";
+// $sizeType: 'rem';
+// $sizeType: 'px';
+:root {
+  --sizetype: #{$sizeType};
+}
+
+@mixin setUnit($size) {
+  @if ($size == "tbu") {
+    :root {
+      --sizetype: #{"tbu"};
+    }
+  } @else if ($size == "rem") {
+    :root {
+      --sizetype: #{"rem"};
+    }
+  } @else {
+    :root {
+      --sizetype: #{"px"};
+    }
+  }
+}
+
+@function tbu($size, $applyZoom: 0) {
+  @if ($sizeType== "tbu") {
+    @return calcSize($size, "app", $applyZoom);
+  } @else if ($sizeType== "rem") {
+    @return unquote($size + "rem");
+  } @else {
+    @return unquote($size + "px");
+  }
+}
+
+@mixin setFontSize($size, $applyZoom: 0) {
+  @if ($sizeType== "tbu") {
+    font-size: calcSize($size, "font", $applyZoom) !important;
+  } @else if ($sizeType== "rem") {
+    font-size: unquote($size + "rem") !important;
+  } @else {
+    font-size: unquote($size + "px") !important;
+  }
+}
+
+@function px($size) {
+  @if ($sizeType== "tbu") {
+    @return (($size * 100) / 1080);
+  } @else if ($sizeType== "rem") {
+    @return pxToRem($size);
+  } @else {
+    @return $size;
+  }
+}
+
+@function calcSize($size, $zoom, $applyZoom: 0) {
+  @if $zoom== "font" {
+    @if $applyZoom==0 {
+      @return calc(calc(((#{$size}) / 100) * var(--screenHeight)) * 1);
+    } @else {
+      @return calc(
+        calc(((#{$size}) / 100) * var(--screenHeight)) * var(--font-zoom)
+      );
+    }
+  } @else {
+    @if $applyZoom==0 {
+      @return calc(calc(((#{$size}) / 100) * var(--screenHeight)) * 1);
+    } @else {
+      @return calc(
+        calc(((#{$size}) / 100) * var(--screenHeight)) * var(--app-zoom)
+      );
+    }
+  }
+}
+
+@function pxToRem($size) {
+  @return ($size / 16);
+}
+
+@function pxTopt($size) {
+  @return ((($size * 1.3333) * 100) / 1040);
+}

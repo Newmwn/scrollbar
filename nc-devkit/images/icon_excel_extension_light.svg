@@ -1,0 +1,8 @@
+<svg id="icon_excel_extension_light" xmlns="http://www.w3.org/2000/svg" width="100" height="100.001" viewBox="0 0 100 100.001">
+  <rect id="shape" width="100" height="100" fill="none"/>
+  <g id="excel" transform="translate(13.003 -0.648)">
+    <path id="background" d="M12.884.65H45.973L74,30.206V87.627A12.96,12.96,0,0,1,61.116,100.65H12.884A12.96,12.96,0,0,1,0,87.627V13.673A12.96,12.96,0,0,1,12.884.65Z" transform="translate(0 0)" fill="#e8e8e8" fill-rule="evenodd"/>
+    <path id="fold" d="M237.1.65v29.3h28.069Z" transform="translate(-191.172)" fill="#00733b" fill-rule="evenodd" opacity="0.3"/>
+    <path id="icon" d="M112.5,278.922h18.028v6.832H112.5Zm23.654-34.907h18.085v6.775H136.159Zm-23.654,0h18.028v6.775H112.5ZM136.159,255.5h18.085v6.832H136.159Zm-23.654,0h18.028v6.832H112.5Zm23.654,11.942h18.085v6.832H136.159Zm-23.654,0h18.028v6.832H112.5Zm23.654,11.483h18.085v6.832H136.159Z" transform="translate(-96.374 -200.236)" fill="#00733b" fill-rule="evenodd"/>
+  </g>
+</svg>

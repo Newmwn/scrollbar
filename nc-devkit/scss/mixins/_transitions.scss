@@ -1,0 +1,3 @@
+@mixin fade($time, $ease: ease-in-out) {
+  transition: $time $ease all;
+}

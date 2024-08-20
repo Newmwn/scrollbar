@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42">
+  <g id="icon_multi" transform="translate(0 0.081)">
+    <rect id="bg" width="42" height="42" transform="translate(0 -0.081)" fill="none"/>
+    <path id="Path_5700" data-name="Path 5700" d="M125.749,105.5h3.74v-3.869h-3.74v-4.3h-3.884v17.051h3.884Z" transform="translate(-92.488 -77.385)" fill="#0061a8"/>
+    <path id="Path_5701" data-name="Path 5701" d="M79.149,91.917,82.356,94.1l1.1-1.6a22.871,22.871,0,0,0,4.033-12.995V77.5H79.9L75.613,62.555h-5.4l-4.84,16.427L69.1,80.072l1.361-4.621h4.812l1.7,5.922h6.539a19.022,19.022,0,0,1-3.265,8.947ZM71.6,71.582l1.3-4.406,1.264,4.406Z" transform="translate(-60.373 -57.556)" fill="#0061a8"/>
+  </g>
+</svg>

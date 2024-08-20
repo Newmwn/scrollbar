@@ -1,0 +1,8 @@
+<svg id="word_extension" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+  <rect id="shape" width="100" height="100" transform="translate(0 0)" fill="none"/>
+  <g id="word" transform="translate(13 -0.662)">
+    <path id="Path_19993" data-name="Path 19993" d="M12.863.662H45.972L74,30.206V87.659a12.946,12.946,0,0,1-12.882,13H12.863A12.942,12.942,0,0,1,0,87.659V13.665a12.942,12.942,0,0,1,12.863-13Z" transform="translate(0 0)" fill="#0263d1"/>
+    <path id="Path_19994" data-name="Path 19994" d="M237.117.662V29.975h28.066Z" transform="translate(-191.183 0)" fill="rgba(255,255,255,0.3)" fill-rule="evenodd"/>
+    <path id="Path_19995" data-name="Path 19995" d="M142.09,248.53H114.67a2.282,2.282,0,1,1,0-4.563h27.42a2.281,2.281,0,0,1,0,4.563Zm-9.14,27.437H114.67a2.282,2.282,0,1,1,0-4.563h18.28a2.281,2.281,0,0,1,0,4.563Zm9.14-9.146H114.67a2.281,2.281,0,1,1,0-4.563h27.42a2.281,2.281,0,0,1,0,4.563Zm0-9.146H114.67a2.282,2.282,0,1,1,0-4.563h27.42a2.281,2.281,0,0,1,0,4.563Z" transform="translate(-91.364 -195.305)" fill="#fff"/>
+  </g>
+</svg>

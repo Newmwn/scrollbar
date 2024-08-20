@@ -1,0 +1,8 @@
+<svg id="icon_excel_extension" xmlns="http://www.w3.org/2000/svg" width="100" height="100.001" viewBox="0 0 100 100.001">
+  <rect id="shape" width="100" height="100" fill="none"/>
+  <g id="excel" transform="translate(13.003 -0.648)">
+    <path id="Path_19966" data-name="Path 19966" d="M12.884.65H45.973L74,30.206V87.627A12.96,12.96,0,0,1,61.116,100.65H12.884A12.96,12.96,0,0,1,0,87.627V13.673A12.96,12.96,0,0,1,12.884.65Z" transform="translate(0 0)" fill="#00733b" fill-rule="evenodd"/>
+    <path id="Path_19967" data-name="Path 19967" d="M237.1.65v29.3h28.069Z" transform="translate(-191.172)" fill="rgba(255,255,255,0.3)" fill-rule="evenodd"/>
+    <path id="Path_19968" data-name="Path 19968" d="M112.5,270.777h13.821v5.238H112.5Zm18.135-26.762h13.865v5.194H130.64Zm-18.135,0h13.821v5.194H112.5Zm18.135,8.8h13.865v5.238H130.64Zm-18.135,0h13.821v5.238H112.5Zm18.135,9.155h13.865v5.238H130.64Zm-18.135,0h13.821v5.238H112.5Zm18.135,8.8h13.865v5.238H130.64Z" transform="translate(-91.505 -195.367)" fill="#fff" fill-rule="evenodd"/>
+  </g>
+</svg>

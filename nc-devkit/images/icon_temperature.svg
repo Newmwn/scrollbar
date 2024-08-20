@@ -1,0 +1,7 @@
+<svg id="temperature" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+  <rect id="shape" width="100" height="100" fill="none"/>
+  <g id="temparature" transform="translate(-16.999 -5)">
+    <path id="shape-2" data-name="shape" d="M23.959,3.469A12.015,12.015,0,0,1,36.02,15.339v39.8A23.72,23.72,0,0,1,23.958,99.467,23.72,23.72,0,0,1,11.979,55.138v-39.8A12,12,0,0,1,23.958,3.469Z" transform="translate(18.999 3.531)" fill="#181818"/>
+    <path id="shape-3" data-name="shape" d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0m0,24a8,8,0,1,1,8-8,8.013,8.013,0,0,1-8,8" transform="translate(83 7)" fill="#181818"/>
+  </g>
+</svg>

@@ -1,0 +1,20 @@
+/*
+Theme Name: Desktop angular compoenents
+Description: float styles and breakpoints
+*/
+
+@each $breakpoint in map-keys($newBreakPoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid_breakpoints);
+
+    .float#{$infix}-left {
+      float: left !important;
+    }
+    .float#{$infix}-right {
+      float: right !important;
+    }
+    .float#{$infix}-none {
+      float: none !important;
+    }
+  }
+}

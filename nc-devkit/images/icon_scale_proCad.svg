@@ -1,0 +1,5 @@
+<svg id="icon_scale" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <rect id="Rectangle_2450" data-name="Rectangle 2450" width="24" height="24" fill="none"/>
+  <path id="shape" d="M16944,21027h2a2.151,2.151,0,0,1-2,2Zm-4,2v-2h2v2Zm-4,0v-2h2v2Zm8-4v-2h2v2Zm0-4v-2h2v2Zm-20,0v-2h2v2Zm20-4v-2h2v2Zm-20,0v-2h2v2Zm20-4v-2a2.154,2.154,0,0,1,2,2Zm-4,0v-2h2v2Zm-4,0v-2h2v2Zm-4,0v-2h2v2Zm-4,0v-2h2v2Zm-4,0a2.154,2.154,0,0,1,2-2v2Z" transform="translate(-16923 -21008)" fill="#787878"/>
+  <path id="svg-fill-primary" d="M16926,21029a2.009,2.009,0,0,1-2-2v-4h8a2.009,2.009,0,0,1,2,2v4Zm8.688-7.051a.578.578,0,0,1,0-.818l5.389-5.389-2.359,0a.578.578,0,1,1,0-1.156h3.758a.576.576,0,0,1,.574.58v3.758a.578.578,0,0,1-1.156,0v-2.359l-5.387,5.389a.586.586,0,0,1-.412.17A.563.563,0,0,1,16934.688,21021.949Z" transform="translate(-16923 -21008)" fill="#efa106"/>
+</svg>

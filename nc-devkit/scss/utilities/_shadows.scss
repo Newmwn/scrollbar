@@ -1,0 +1,17 @@
+/*
+Theme Name: Desktop angular compoenents
+Description: basic balck shadows
+*/
+
+.shadow-sm {
+  box-shadow: $box_shadow_sm !important;
+}
+.shadow {
+  box-shadow: $box_shadow !important;
+}
+.shadow-lg {
+  box-shadow: $box_shadow_lg !important;
+}
+.shadow-none {
+  box-shadow: none !important;
+}

@@ -1,0 +1,13 @@
+<svg id="icon_draw-polygon" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+  <rect id="shape" width="100" height="100" fill="none"/>
+  <g id="draw" transform="translate(-343.484 -408.49)">
+    <g id="polygon">
+      <rect id="shape-2" data-name="shape" width="36.363" height="36.363" transform="translate(388.484 415.489)" fill="none"/>
+      <path id="shape-3" data-name="shape" d="M762.52-290.015l19.488,38.156H743.031l19.488-38.156m0-5.573-23.757,46.516h47.515L762.52-295.588Z" transform="translate(-349.793 712.562)" fill="#787878"/>
+    </g>
+    <path id="line" d="M0,0H1V22H0Z" transform="translate(379.914 441.49)" fill="#787878"/>
+    <path id="line-2" data-name="line" d="M0,0H1V22H0Z" transform="translate(410.414 470.99) rotate(90)" fill="#787878"/>
+    <path id="line-3" data-name="line" d="M0,0H1V22H0Z" transform="translate(379.914 479.49)" fill="#787878"/>
+    <path id="line-4" data-name="line" d="M0,0H1V22H0Z" transform="translate(372.414 470.99) rotate(90)" fill="#787878"/>
+  </g>
+</svg>

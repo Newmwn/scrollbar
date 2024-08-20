@@ -1,0 +1,11 @@
+<svg id="icon_image_extensions" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+  <rect id="shape" width="100" height="100" fill="none"/>
+  <g id="ps" transform="translate(13.006)">
+    <path id="Path_19936" data-name="Path 19936" d="M12.881.61H45.963L74,30.145V87.591A12.937,12.937,0,0,1,61.143,100.61H12.881A12.942,12.942,0,0,1,0,87.591V13.629A12.942,12.942,0,0,1,12.881.61Z" transform="translate(0 -0.61)" fill="#0ac963" fill-rule="evenodd"/>
+    <path id="Path_19937" data-name="Path 19937" d="M237.139.61V29.92H265.2Z" transform="translate(-191.201 -0.61)" fill="rgba(255,255,255,0.3)" fill-rule="evenodd"/>
+    <g id="icon_image" transform="translate(20.994 48)">
+      <rect id="shape-2" data-name="shape" width="32" height="32" transform="translate(0 0)" fill="none"/>
+      <path id="image" d="M725.86,275.819c3.792,0,7.583.022,11.374-.01a3.423,3.423,0,0,1,3.377,2.625,3.751,3.751,0,0,1,.091.815q.007,11.373,0,22.746a3.387,3.387,0,0,1-3.451,3.462q-11.375,0-22.749.006a3.452,3.452,0,0,1-3.452-3.435q.035-11.387,0-22.774a3.45,3.45,0,0,1,3.463-3.446C718.3,275.845,722.078,275.819,725.86,275.819ZM722.736,289.6l7.442,7.34,2.585-2.6,3.726,3.685c.01-.109.016-.146.016-.184q0-8.059,0-16.117a1.651,1.651,0,0,0-1.765-1.734q-8.87-.007-17.74,0a1.661,1.661,0,0,0-1.779,1.779q-.007,7.519,0,15.037a2.1,2.1,0,0,0,.029.233Z" transform="translate(-709.762 -274.752)" fill="#fcfcfc"/>
+    </g>
+  </g>
+</svg>

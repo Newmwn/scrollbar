@@ -1,0 +1,13 @@
+<svg id="architecture_black_24dp" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <g id="Group_16205" data-name="Group 16205">
+    <rect id="Rectangle_2161" data-name="Rectangle 2161" width="16" height="16" fill="none"/>
+    <rect id="Rectangle_2162" data-name="Rectangle 2162" width="16" height="16" fill="none"/>
+  </g>
+  <g id="Group_16207" data-name="Group 16207" transform="translate(4.24 2)">
+    <g id="Group_16206" data-name="Group 16206">
+      <path id="Path_24188" data-name="Path 24188" d="M6.36,16.147l.167,1.48L7.607,16.6l1.847-5.067a2.61,2.61,0,0,1-1.18-.653Z" transform="translate(-6.36 -5.627)" fill="#4ebecb"/>
+      <path id="Path_24189" data-name="Path 24189" d="M14.18,10.88a2.645,2.645,0,0,1-1.18.653L14.847,16.6l1.08,1.027.173-1.48Z" transform="translate(-8.573 -5.627)" fill="#4ebecb"/>
+      <path id="Path_24190" data-name="Path 24190" d="M12.96,6.733a2,2,0,0,0-1.293-2.28V3.667A.669.669,0,0,0,11,3h0a.669.669,0,0,0-.667.667v.787a2,2,0,1,0,2.627,2.28ZM11,7a.667.667,0,1,1,.667-.667A.669.669,0,0,1,11,7Z" transform="translate(-7.24 -3)" fill="#4ebecb"/>
+    </g>
+  </g>
+</svg>

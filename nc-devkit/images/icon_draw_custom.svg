@@ -1,0 +1,13 @@
+<svg id="icon_draw-custom" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+  <rect id="shape" width="100" height="100" fill="none"/>
+  <g id="draw" transform="translate(-343.484 -408.49)">
+    <g id="custom">
+      <rect id="shape-2" data-name="shape" width="45" height="45" transform="translate(388.484 415.49)" fill="none"/>
+      <path id="custom-2" data-name="custom" d="M-183.542,254.9c0-2.48-.1-4.964.024-7.437a7.725,7.725,0,0,1,4.83-7.143q9.251-3.945,18.644-7.553a8.343,8.343,0,0,1,11.067,5.5q2.682,9.066,5.107,18.208a8.413,8.413,0,0,1-6.921,10.508c-3.691.609-7.4,1.11-11.1,1.656-4.027.594-8.049,1.234-12.085,1.761a8.261,8.261,0,0,1-8.016-3.508,8.35,8.35,0,0,1-1.58-5.28c.005-2.237,0-4.474,0-6.711Zm2.749.053c0,2.289-.02,4.579,0,6.868a5.773,5.773,0,0,0,6.689,5.76q11.316-1.645,22.634-3.282a5.663,5.663,0,0,0,4.837-7.214q-2.413-8.929-4.961-17.822a5.7,5.7,0,0,0-7.642-3.881q-8.964,3.558-17.878,7.244a5.612,5.612,0,0,0-3.686,5.615Q-180.794,251.6-180.794,254.958Z" transform="translate(574.064 187.139)" fill="#787878"/>
+    </g>
+    <path id="line" d="M0,0H1V22H0Z" transform="translate(379.914 441.49)" fill="#787878"/>
+    <path id="line-2" data-name="line" d="M0,0H1V22H0Z" transform="translate(410.414 470.99) rotate(90)" fill="#787878"/>
+    <path id="line-3" data-name="line" d="M0,0H1V22H0Z" transform="translate(379.914 479.49)" fill="#787878"/>
+    <path id="line-4" data-name="line" d="M0,0H1V22H0Z" transform="translate(372.414 470.99) rotate(90)" fill="#787878"/>
+  </g>
+</svg>

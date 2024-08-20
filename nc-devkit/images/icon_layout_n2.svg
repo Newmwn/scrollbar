@@ -1,0 +1,33 @@
+<svg id="Layout_N2" data-name="Layout N2" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+  <rect id="shape" width="100" height="100" fill="none"/>
+  <g id="Grupo_3845" data-name="Grupo 3845" transform="translate(-193.972 14.194)">
+    <path id="Caminho_19874" data-name="Caminho 19874" d="M2,0H18.2a1,1,0,0,1,1,1V47.222a1,1,0,0,1-1,1H2a2,2,0,0,1-2-2V2A2,2,0,0,1,2,0Z" transform="translate(200.772 3.6)" fill="#28aaca"/>
+    <path id="Caminho_19869" data-name="Caminho 19869" d="M1,0H64.829a1,1,0,0,1,1,1V25.556a2,2,0,0,1-2,2H1a1,1,0,0,1-1-1V1A1,1,0,0,1,1,0Z" transform="translate(221.344 24.266)" fill="#d4d4d4"/>
+    <path id="Caminho_19871" data-name="Caminho 19871" d="M1,0H19.571a1,1,0,0,1,1,1V4.511a1,1,0,0,1-1,1H1a1,1,0,0,1-1-1V1A1,1,0,0,1,1,0Z" transform="translate(243.972 17.377)" fill="#d4d4d4"/>
+    <path id="Caminho_19870" data-name="Caminho 19870" d="M1,0H20.257a1,1,0,0,1,1,1V4.511a1,1,0,0,1-1,1H1a1,1,0,0,1-1-1V1A1,1,0,0,1,1,0Z" transform="translate(221.344 17.377)" fill="#d4d4d4"/>
+    <path id="Caminho_19873" data-name="Caminho 19873" d="M1,0H63.829a2,2,0,0,1,2,2v9.4a1,1,0,0,1-1,1H1a1,1,0,0,1-1-1V1A1,1,0,0,1,1,0Z" transform="translate(221.344 3.6)" fill="#b8b8b8"/>
+    <path id="Caminho_19872" data-name="Caminho 19872" d="M1,0H20.257a1,1,0,0,1,1,1V4.511a1,1,0,0,1-1,1H1a1,1,0,0,1-1-1V1A1,1,0,0,1,1,0Z" transform="translate(265.915 17.377)" fill="#d4d4d4"/>
+    <g id="Grupo_3831" data-name="Grupo 3831" transform="translate(204.466 24.755)">
+      <path id="Caminho_19839" data-name="Caminho 19839" d="M196.831,162.021h4.349a.141.141,0,0,0,.1-.24l-2.784-2.8a.14.14,0,0,0-.2,0l-.692.7a.293.293,0,0,1-.415,0h0l-2.168-2.178a.14.14,0,0,0-.2,0l-4.24,4.26a.141.141,0,0,0,0,.2.14.14,0,0,0,.1.041h6.154Z" transform="translate(-189.506 -156.11)" fill="#1a758c"/>
+      <ellipse id="Elipse_146" data-name="Elipse 146" cx="1.345" cy="1.351" rx="1.345" ry="1.351" transform="translate(0)" fill="#1a758c"/>
+    </g>
+    <g id="Grupo_3832" data-name="Grupo 3832" transform="translate(195.972 -1.223)">
+      <g id="image" transform="translate(0)">
+        <g id="image-2" data-name="image">
+          <g id="Computer">
+            <path id="shape-2" data-name="shape" d="M90.34,2H9.66A7.7,7.7,0,0,0,2,9.714l.048,58.629a7.7,7.7,0,0,0,7.66,7.714H90.225a7.7,7.7,0,0,0,7.66-7.714L98,9.714A7.7,7.7,0,0,0,90.34,2ZM9.66,5.086H90.34a4.612,4.612,0,0,1,4.6,4.629L94.984,56.5H5.111L5.064,9.714A4.612,4.612,0,0,1,9.66,5.086ZM90.225,72.971H9.707a4.612,4.612,0,0,1-4.6-4.629V59.585H94.984l-.163,8.758A4.612,4.612,0,0,1,90.225,72.971Z" transform="translate(-2 -2)" fill="#fcfcfc"/>
+            <path id="shape-3" data-name="shape" d="M33.734,41a4.713,4.713,0,1,0,4.734,4.713A4.723,4.723,0,0,0,33.734,41Zm0,6.284a1.571,1.571,0,1,1,1.578-1.571A1.574,1.574,0,0,1,33.734,47.284Z" transform="translate(15.319 18.592)" fill="#fcfcfc"/>
+          </g>
+        </g>
+      </g>
+      <g id="image-3" data-name="image" transform="translate(0)" opacity="0.5" style="isolation: isolate">
+        <g id="image-4" data-name="image">
+          <g id="Computer-2" data-name="Computer" style="isolation: isolate">
+            <path id="shape-4" data-name="shape" d="M90.34,2H9.66A7.7,7.7,0,0,0,2,9.714l.048,58.629a7.7,7.7,0,0,0,7.66,7.714H90.225a7.7,7.7,0,0,0,7.66-7.714L98,9.714A7.7,7.7,0,0,0,90.34,2ZM9.66,5.086H90.34a4.612,4.612,0,0,1,4.6,4.629L94.984,56.5H5.111L5.064,9.714A4.612,4.612,0,0,1,9.66,5.086ZM90.225,72.971H9.707a4.612,4.612,0,0,1-4.6-4.629V59.585H94.984l-.163,8.758A4.612,4.612,0,0,1,90.225,72.971Z" transform="translate(-2 -2)" fill="#b8b8b8"/>
+            <path id="shape-5" data-name="shape" d="M33.734,41a4.713,4.713,0,1,0,4.734,4.713A4.723,4.723,0,0,0,33.734,41Zm0,6.284a1.571,1.571,0,1,1,1.578-1.571A1.574,1.574,0,0,1,33.734,47.284Z" transform="translate(15.319 18.592)" fill="#b8b8b8"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

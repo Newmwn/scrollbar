@@ -1,0 +1,22 @@
+<svg id="Layout_N4" data-name="Layout N4" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+  <rect id="shape" width="100" height="100" fill="none"/>
+  <g id="Grupo_3847" data-name="Grupo 3847" transform="translate(-450 -558)">
+    <g id="image" transform="translate(452 572.186)">
+      <g id="image-2" data-name="image">
+        <g id="Computer">
+          <path id="shape-2" data-name="shape" d="M89.334,2H9.572A7.609,7.609,0,0,0,2,9.626l.047,57.961a7.609,7.609,0,0,0,7.572,7.626h79.6a7.609,7.609,0,0,0,7.572-7.626l.114-57.961A7.609,7.609,0,0,0,89.334,2ZM9.572,5.051H89.334a4.56,4.56,0,0,1,4.543,4.576l.047,46.252H5.076L5.029,9.626A4.56,4.56,0,0,1,9.572,5.051ZM89.22,72.163H9.619a4.56,4.56,0,0,1-4.543-4.576V58.929H93.925l-.161,8.658A4.56,4.56,0,0,1,89.22,72.163Z" transform="translate(-2 -2)" fill="#fcfcfc"/>
+          <path id="shape-3" data-name="shape" d="M33.68,41a4.659,4.659,0,1,0,4.68,4.659A4.67,4.67,0,0,0,33.68,41Zm0,6.212a1.553,1.553,0,1,1,1.56-1.553A1.557,1.557,0,0,1,33.68,47.212Z" transform="translate(14.815 17.914)" fill="#fcfcfc"/>
+        </g>
+      </g>
+    </g>
+    <path id="Caminho_19876" data-name="Caminho 19876" d="M2,0H84.4a2,2,0,0,1,2,2V45.673a2,2,0,0,1-2,2H2a2,2,0,0,1-2-2V2A2,2,0,0,1,2,0Z" transform="translate(456.8 576.592)" fill="#d4d4d4"/>
+    <g id="image-3" data-name="image" transform="translate(452 571)" opacity="0.5" style="isolation: isolate">
+      <g id="image-4" data-name="image" transform="translate(0 0)">
+        <g id="Computer-2" data-name="Computer" style="isolation: isolate">
+          <path id="shape-4" data-name="shape" d="M90.436,1H9.564A7.6,7.6,0,0,0,2,8.626l.047,59.147A7.6,7.6,0,0,0,9.611,75.4H90.322a7.6,7.6,0,0,0,7.564-7.626L98,8.626A7.6,7.6,0,0,0,90.436,1ZM9.564,4.051H90.436a4.557,4.557,0,0,1,4.538,4.576l.047,47.438H5.073L5.026,8.626A4.557,4.557,0,0,1,9.564,4.051Zm80.758,68.3H9.611a4.557,4.557,0,0,1-4.538-4.576V59.115H95.022l-.161,8.658A4.557,4.557,0,0,1,90.322,72.349Z" transform="translate(-2 -1)" fill="#b8b8b8"/>
+          <path id="shape-5" data-name="shape" d="M33.68,41a4.659,4.659,0,1,0,4.68,4.659A4.67,4.67,0,0,0,33.68,41Zm0,6.212a1.553,1.553,0,1,1,1.56-1.553A1.557,1.557,0,0,1,33.68,47.212Z" transform="translate(14.815 19.1)" fill="#b8b8b8"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

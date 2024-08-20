@@ -1,0 +1,9 @@
+<svg id="icon_apps" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+  <rect id="shape" width="100" height="100" fill="none"/>
+  <g id="svg-fill-primary" transform="translate(-39.448 -39.86)">
+    <path id="svg-fill-primary-2" data-name="svg-fill-primary" d="M48.162,0Q64.845,0,81.527,0c8.77,0,14.417,5.62,14.418,14.353,0,22.359-.1,44.719.054,67.077A14.261,14.261,0,0,1,81.445,96Q48,95.706,14.554,96A14.261,14.261,0,0,1,0,81.432C.152,59.073.049,36.714.054,14.355.056,5.623,5.7.006,14.473,0Q31.318,0,48.162,0m-.138,87.493q14.572,0,29.144-.013a22.79,22.79,0,0,0,3.7-.3c3.655-.613,5.838-2.7,6.312-6.362a59.949,59.949,0,0,0,.323-7.586q.036-27.372.008-54.745c0-5.553-2.874-8.9-8.354-9.749a23.253,23.253,0,0,0-3.541-.289q-28.5-.026-56.993-.01c-7.27,0-10.133,2.852-10.136,10.1q-.012,29.4,0,58.794c0,7.342,2.845,10.16,10.232,10.164q14.653.009,29.306,0" transform="translate(41.448 41.86)"/>
+    <path id="svg-fill-primary-3" data-name="svg-fill-primary" d="M0,0H26.118V26.15H0Z" transform="translate(59.367 59.726)"/>
+    <path id="svg-fill-primary-4" data-name="svg-fill-primary" d="M0,0H26.2V26.118H0Z" transform="translate(93.373 59.716)"/>
+    <path id="svg-fill-primary-5" data-name="svg-fill-primary" d="M0,0H26.19V26.112H0Z" transform="translate(59.33 93.816)"/>
+  </g>
+</svg>

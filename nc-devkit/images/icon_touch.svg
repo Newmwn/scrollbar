@@ -1,0 +1,13 @@
+<svg id="icon_touch" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100" height="100" viewBox="0 0 100 100">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_3206" data-name="Rectangle 3206" width="62" height="88" fill="#181818"/>
+    </clipPath>
+  </defs>
+  <rect id="shape" width="100" height="100" fill="none"/>
+  <g id="Group_15990" data-name="Group 15990" transform="translate(19 6)">
+    <g id="Group_15989" data-name="Group 15989" clip-path="url(#clip-path)">
+      <path id="Path_50377" data-name="Path 50377" d="M16.236,34.53V18.857a10.705,10.705,0,0,1,21.406,0V34.53A18.7,18.7,0,0,0,46.2,18.857,19.039,19.039,0,0,0,26.939,0,19.039,19.039,0,0,0,7.674,18.857,18.7,18.7,0,0,0,16.236,34.53M39.782,44.88a8.6,8.6,0,0,0-3.81-.88H33.361V18.857a6.423,6.423,0,0,0-12.844,0V63.863L5.79,60.846a4.9,4.9,0,0,0-4.41,1.3,4.659,4.659,0,0,0,0,6.621l17.168,16.8A8.829,8.829,0,0,0,24.627,88H50.742a8.481,8.481,0,0,0,8.477-7.208l2.7-18.731a8.345,8.345,0,0,0-4.666-8.674Z" transform="translate(-0.002)" fill="#181818"/>
+    </g>
+  </g>
+</svg>

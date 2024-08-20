@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+  <g id="Centred" transform="translate(6 7)">
+    <path id="shape" d="M4,0A4,4,0,1,1,0,4,4,4,0,0,1,4,0Z" transform="translate(1)" fill="#d4d4d4"/>
+    <rect id="shape-2" data-name="shape" width="22" height="22" transform="translate(-6 -7)" fill="none"/>
+  </g>
+</svg>

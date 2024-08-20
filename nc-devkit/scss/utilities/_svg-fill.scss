@@ -1,0 +1,23 @@
+/* ************* SVG FILLS ************* */
+@each $fill, $value in $svg-fills {
+  .#{$fill} {
+    ::ng-deep {
+      path {
+        @include fade(0.2s);
+        fill: $value;
+      }
+    }
+  }
+}
+@each $fill, $value in $svg-fills {
+  .hover-#{$fill} {
+    &:hover {
+      ::ng-deep {
+        path {
+          @include fade(0.2s);
+          fill: $value;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+<svg id="Layout_n6" data-name="Layout n6" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+  <rect id="shape" width="100" height="100" fill="none"/>
+  <g id="Grupo_3849" data-name="Grupo 3849" transform="translate(2 13.799)">
+    <path id="Caminho_19896" data-name="Caminho 19896" d="M3,0H18.2a1,1,0,0,1,1,1V85.4a1,1,0,0,1-1,1H3a3,3,0,0,1-3-3V3A3,3,0,0,1,3,0Z" transform="translate(91.2 3.745) rotate(90)" fill="#b8b8b8"/>
+    <path id="Subtração_10" data-name="Subtração 10" d="M84.4,26.4H1a1,1,0,0,1-1-1V1A1,1,0,0,1,1,0H84.4a2,2,0,0,1,2,2V24.4A2,2,0,0,1,84.4,26.4ZM5.6,18.8a2.4,2.4,0,0,0,0,4.8H26.4a2.4,2.4,0,0,0,0-4.8Zm0-8a2.4,2.4,0,0,0,0,4.8H32.8a2.4,2.4,0,0,0,0-4.8Zm0-8a2.4,2.4,0,1,0,0,4.8H46.057a2.4,2.4,0,0,0,0-4.8Z" transform="translate(4.799 25.401)" fill="#d4d4d4"/>
+    <g id="Grupo_3829" data-name="Grupo 3829" transform="translate(0 -0.999)">
+      <g id="image" transform="translate(0 0)">
+        <g id="image-2" data-name="image">
+          <g id="Computer">
+            <path id="shape-2" data-name="shape" d="M90.34,1H9.66A7.651,7.651,0,0,0,2,8.625l.048,59.15A7.651,7.651,0,0,0,9.707,75.4H90.225a7.651,7.651,0,0,0,7.66-7.625L98,8.625A7.651,7.651,0,0,0,90.34,1ZM9.66,4.05H90.34a4.585,4.585,0,0,1,4.6,4.575l.048,47.443H5.111L5.064,8.625A4.585,4.585,0,0,1,9.66,4.05Zm80.565,68.3H9.707a4.585,4.585,0,0,1-4.6-4.575V59.118H94.984l-.163,8.656A4.585,4.585,0,0,1,90.225,72.349Z" transform="translate(-2 -1)" fill="#d4d4d4"/>
+            <path id="shape-3" data-name="shape" d="M33.734,41a4.659,4.659,0,1,0,4.734,4.658A4.7,4.7,0,0,0,33.734,41Zm0,6.211a1.553,1.553,0,1,1,1.578-1.553A1.566,1.566,0,0,1,33.734,47.211Z" transform="translate(15.319 19.102)" fill="#d4d4d4"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

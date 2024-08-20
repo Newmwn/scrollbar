@@ -1,0 +1,10 @@
+<svg id="icon_flip_horizontal" data-name="icon_flip horizontal" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+  <g id="reflect_horizontal" data-name="reflect horizontal" transform="translate(2698 -747) rotate(90)">
+    <rect id="shape" width="100" height="100" transform="translate(747 2598)" fill="none"/>
+    <g id="reflect_horiz" data-name="reflect horiz" transform="translate(1.406 -5)">
+      <path id="outlined_triangle" data-name="outlined triangle" d="M27.389,50.841a2.762,2.762,0,0,1-1.806-.72L1.785,29.939A5.924,5.924,0,0,1,0,25.42,5.924,5.924,0,0,1,1.785,20.9L25.582.72A2.763,2.763,0,0,1,27.389,0a3.182,3.182,0,0,1,2.506,1.473,6.49,6.49,0,0,1,1.1,3.765V45.6a6.49,6.49,0,0,1-1.1,3.764A3.182,3.182,0,0,1,27.389,50.841ZM22.843,12.458a1.4,1.4,0,0,0-.916.365L9.857,23.06a3.006,3.006,0,0,0-.905,2.293,3,3,0,0,0,.905,2.29l12.07,10.237a1.4,1.4,0,0,0,.916.365,1.614,1.614,0,0,0,1.271-.747,3.292,3.292,0,0,0,.556-1.909V15.115a3.291,3.291,0,0,0-.556-1.909A1.614,1.614,0,0,0,22.843,12.458Z" transform="translate(804.602 2627.871)" fill="#181818"/>
+      <path id="divider" d="M3,0H73a3,3,0,0,1,3,3V5a3,3,0,0,1-3,3H3A3,3,0,0,1,0,5V3A3,3,0,0,1,3,0Z" transform="translate(799.624 2615) rotate(90)" fill="#181818"/>
+      <path id="solid_triangle" data-name="solid triangle" d="M20.9,1.785c2.018-2.38,7.017-2.38,9.035,0l20.183,23.8c2.034,2.4-.481,5.41-4.518,5.41H5.238c-4.037,0-6.551-3.012-4.518-5.41Z" transform="translate(786.586 2627.871) rotate(90)" fill="#181818"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,14 @@
+/*
+Theme Name: Desktop angular compoenents
+Description: add opacity to colors
+*/
+
+// LIGTHEN COLORS
+@function ligthen($variable, $opacity) {
+  @return unquote('linear-gradient(to top,rgba(255, 255, 255,' + $opacity + '),rgba(255, 255, 255,' + $opacity + ')) ' + $variable);
+}
+
+// DARKEN COLORS
+@function darken($variable, $opacity) {
+  @return unquote('linear-gradient(to top,rgba(0, 0, 0,' + $opacity + '),rgba(0, 0, 0,' + $opacity + '))' + $variable);
+}

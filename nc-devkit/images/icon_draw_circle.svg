@@ -1,0 +1,13 @@
+<svg id="icon_draw-circle" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+  <rect id="shape" width="100" height="100" fill="none"/>
+  <g id="draw" transform="translate(-343.484 -408.49)">
+    <g id="circle">
+      <rect id="shape-2" data-name="shape" width="48" height="48" transform="translate(388.484 415.489)" fill="none"/>
+      <path id="shape-3" data-name="shape" d="M308.678,285.263a20.012,20.012,0,0,1,19.99,19.987v2.112a20.012,20.012,0,0,1-19.99,19.989h-2.112a20.012,20.012,0,0,1-19.987-19.989V305.25a20.011,20.011,0,0,1,19.987-19.987h2.112m0-2.476h-2.112A22.529,22.529,0,0,0,284.1,305.25v2.112a22.53,22.53,0,0,0,22.463,22.465h2.112a22.53,22.53,0,0,0,22.465-22.465V305.25a22.53,22.53,0,0,0-22.465-22.463Z" transform="translate(104.861 133.419)" fill="#787878" opacity="0.98"/>
+    </g>
+    <path id="line" d="M0,0H1V22H0Z" transform="translate(380.413 441.49)" fill="#787878"/>
+    <path id="line-2" data-name="line" d="M0,0H1V22H0Z" transform="translate(410.913 470.99) rotate(90)" fill="#787878"/>
+    <path id="line-3" data-name="line" d="M0,0H1V22H0Z" transform="translate(380.413 479.49)" fill="#787878"/>
+    <path id="line-4" data-name="line" d="M0,0H1V22H0Z" transform="translate(372.913 470.99) rotate(90)" fill="#787878"/>
+  </g>
+</svg>

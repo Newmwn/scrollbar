@@ -1,0 +1,11 @@
+/*
+Theme Name: Desktop angular compoenents
+Description: remove transition
+*/
+
+.no-transition {
+  transition: none !important;
+  * {
+    transition: none !important;
+  }
+}

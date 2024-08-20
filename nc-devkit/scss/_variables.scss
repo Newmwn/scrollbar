@@ -1,0 +1,710 @@
+// @use "sass:map";
+
+/****** Colors Variables *********/
+/* PRIMARY LIGHT */
+$primary_light: var(--primary_light);
+$primary_light_bg: var(--primary_light_bg);
+$primary_light_border: var(--primary_light_border);
+$primary_light_txt: var(--primary_light_txt);
+$primary_light_link: var(--primary_light_link);
+$primary_light_fill: var(--primary_light_fill);
+
+/* PRIMARY */
+$primary: var(--primary);
+$primary_bg: var(--primary_bg);
+$primary_border: var(--primary_border);
+$primary_txt: var(--primary_txt);
+$primary_link: var(--primary_link);
+$primary_fill: var(--primary_fill);
+
+/* PRIMARY DARK */
+$primary_dark: var(--primary_dark);
+$primary_dark_bg: var(--primary_dark_bg);
+$primary_dark_border: var(--primary_dark_border);
+$primary_dark_txt: var(--primary_dark_txt);
+$primary_dark_link: var(--primary_dark_link);
+$primary_dark_fill: var(--primary_dark_fill);
+
+/* SECONDARY LIGHT */
+$secondary_light: var(--secondary_light);
+$secondary_light_bg: var(--secondary_light_bg);
+$secondary_light_border: var(--secondary_light_border);
+$secondary_light_txt: var(--secondary_light_txt);
+$secondary_light_link: var(--secondary_light_link);
+$secondary_light_fill: var(--secondary_light_fill);
+
+/* SECONDARY*/
+$secondary: var(--secondary);
+$secondary_bg: var(--secondary_bg);
+$secondary_border: var(--secondary_border);
+$secondary_txt: var(--secondary_txt);
+$secondary_link: var(--secondary_link);
+$secondary_fill: var(--secondary_fill);
+
+/* SECONDARY DARK */
+$secondary_dark: var(--secondary_dark);
+$secondary_dark_bg: var(--secondary_dark_bg);
+$secondary_dark_border: var(--secondary_dark_border);
+$secondary_dark_txt: var(--secondary_dark_txt);
+$secondary_dark_link: var(--secondary_dark_link);
+$secondary_dark_fill: var(--secondary_dark_fill);
+
+/* C-SCALE */
+$c-scale-1: var(--c-scale-1);
+$c-scale-1_bg: var(--c-scale-1_bg);
+$c-scale-1_border: var(--c-scale-1_border);
+$c-scale-1_txt: var(--c-scale-1_txt);
+$c-scale-1_link: var(--c-scale-1_link);
+$c-scale-1_fill: var(--c-scale-1_fill);
+
+$c-scale-2: var(--c-scale-2);
+$c-scale-2_bg: var(--c-scale-2_bg);
+$c-scale-2_border: var(--c-scale-2_border);
+$c-scale-2_txt: var(--c-scale-2_txt);
+$c-scale-2_link: var(--c-scale-2_link);
+$c-scale-2_fill: var(--c-scale-2_fill);
+
+$c-scale-3: var(--c-scale-3);
+$c-scale-3_bg: var(--c-scale-3_bg);
+$c-scale-3_border: var(--c-scale-3_border);
+$c-scale-3_txt: var(--c-scale-3_txt);
+$c-scale-3_link: var(--c-scale-3_link);
+$c-scale-3_fill: var(--c-scale-3_fill);
+
+$c-scale-4: var(--c-scale-4);
+$c-scale-4_bg: var(--c-scale-4_bg);
+$c-scale-4_border: var(--c-scale-4_border);
+$c-scale-4_txt: var(--c-scale-4_txt);
+$c-scale-4_link: var(--c-scale-4_link);
+$c-scale-4_fill: var(--c-scale-4_fill);
+
+$c-scale-5: var(--c-scale-5);
+$c-scale-5_bg: var(--c-scale-5_bg);
+$c-scale-5_border: var(--c-scale-5_border);
+$c-scale-5_txt: var(--c-scale-5_txt);
+$c-scale-5_link: var(--c-scale-5_link);
+$c-scale-5_fill: var(--c-scale-5_fill);
+
+$c-scale-6: var(--c-scale-6);
+$c-scale-6_bg: var(--c-scale-6_bg);
+$c-scale-6_border: var(--c-scale-6_border);
+$c-scale-6_txt: var(--c-scale-6_txt);
+$c-scale-6_link: var(--c-scale-6_link);
+$c-scale-6_fill: var(--c-scale-6_fill);
+
+$c-scale-7: var(--c-scale-7);
+$c-scale-7_bg: var(--c-scale-7_bg);
+$c-scale-7_border: var(--c-scale-7_border);
+$c-scale-7_txt: var(--c-scale-7_txt);
+$c-scale-7_link: var(--c-scale-7_link);
+$c-scale-7_fill: var(--c-scale-7_fill);
+
+$c-scale-8: var(--c-scale-8);
+$c-scale-8_bg: var(--c-scale-8_bg);
+$c-scale-8_border: var(--c-scale-8_border);
+$c-scale-8_txt: var(--c-scale-8_txt);
+$c-scale-8_link: var(--c-scale-8_link);
+
+$c-scale-9: var(--c-scale-9);
+$c-scale-9_bg: var(--c-scale-9_bg);
+$c-scale-9_border: var(--c-scale-9_border);
+$c-scale-9_txt: var(--c-scale-9_txt);
+$c-scale-9_link: var(--c-scale-9_link);
+$c-scale-9_fill: var(--c-scale-9_fill);
+
+$c-scale-10: var(--c-scale-10);
+$c-scale-10_bg: var(--c-scale-10_bg);
+$c-scale-10_border: var(--c-scale-10_border);
+$c-scale-10_txt: var(--c-scale-10_txt);
+$c-scale-10_link: var(--c-scale-10_link);
+$c-scale-10_fill: var(--c-scale-10_fill);
+
+$c-scale-11: var(--c-scale-11);
+$c-scale-11_bg: var(--c-scale-11_bg);
+$c-scale-11_border: var(--c-scale-11_border);
+$c-scale-11_txt: var(--c-scale-11_txt);
+$c-scale-11_link: var(--c-scale-11_link);
+$c-scale-11_fill: var(--c-scale-11_fill);
+
+$c-scale-12: var(--c-scale-12);
+$c-scale-12_bg: var(--c-scale-12_bg);
+$c-scale-12_border: var(--c-scale-12_border);
+$c-scale-12_txt: var(--c-scale-12_txt);
+$c-scale-12_link: var(--c-scale-12_link);
+$c-scale-12_fill: var(--c-scale-12_fill);
+
+/* WHITE */
+$white: var(--white);
+$white_bg: var(--white_bg);
+$white_border: var(--white_border);
+$white_txt: var(--white_txt);
+$white_link: var(--white_link);
+$white_fill: var(--white_fill);
+
+/* BLACK */
+$black: var(--black);
+$black_bg: var(--black_bg);
+$black_border: var(--black_border);
+$black_txt: var(--black_txt);
+$black_link: var(--black_link);
+$black_fill: var(--black_fill);
+
+/* INFO  LIGHT*/
+$info_light: var(--info_light);
+$info_light_bg: var(--info_light_bg);
+$info_light_border: var(--info_light_border);
+$info_light_txt: var(--info_light_txt);
+$info_light_link: var(--info_light_link);
+$info_light_fill: var(--info_light_fill);
+
+/* INFO */
+$info: var(--info);
+$info_bg: var(--info_bg);
+$info_border: var(--info_border);
+$info_txt: var(--info_txt);
+$info_link: var(--info_link);
+$info_fill: var(--info_fill);
+
+/* INFO DARK */
+$info_dark: var(--info_dark);
+$info_dark_bg: var(--info_dark_bg);
+$info_dark_border: var(--info_dark_border);
+$info_dark_txt: var(--info_dark_txt);
+$info_dark_link: var(--info_dark_link);
+$info_dark_fill: var(--info_dark_fill);
+
+/* SUCCESS  LIGHT*/
+$success_light: var(--success_light);
+$success_light_bg: var(--success_light_bg);
+$success_light_border: var(--success_light_border);
+$success_light_txt: var(--success_light_txt);
+$success_light_link: var(--success_light_link);
+$success_light_fill: var(--success_light_fill);
+
+/* SUCCESS*/
+$success: var(--success);
+$success_bg: var(--success_bg);
+$success_border: var(--success_border);
+$success_txt: var(--success_txt);
+$success_link: var(--success_link);
+$success_fill: var(--success_fill);
+
+/* SUCCESS  DARK*/
+$success_dark: var(--success_dark);
+$success_dark_bg: var(--success_dark_bg);
+$success_dark_border: var(--success_dark_border);
+$success_dark_txt: var(--success_dark_txt);
+$success_dark_link: var(--success_dark_link);
+$success_dark_fill: var(--success_dark_fill);
+
+/* WARNING  LIGHT*/
+$warning_light: var(--warning_light);
+$warning_light_bg: var(--warning_light_bg);
+$warning_light_border: var(--warning_light_border);
+$warning_light_txt: var(--warning_light_txt);
+$warning_light_link: var(--warning_light_link);
+$warning_light_fill: var(--warning_light_fill);
+
+/* WARNING*/
+$warning: var(--warning);
+$warning_bg: var(--warning_bg);
+$warning_border: var(--warning_border);
+$warning_txt: var(--warning_txt);
+$warning_link: var(--warning_link);
+$warning_fill: var(--warning_fill);
+
+/* WARNING DARK*/
+$warning_dark: var(--warning_dark);
+$warning_dark_bg: var(--warning_dark_bg);
+$warning_dark_border: var(--warning_dark_border);
+$warning_dark_txt: var(--warning_dark_txt);
+$warning_dark_link: var(--warning_dark_link);
+$warning_dark_fill: var(--warning_dark_fill);
+
+/*ERROR LIGHT*/
+$error_light: var(--error_light);
+$error_light_bg: var(--error_light_bg);
+$error_light_border: var(--error_light_border);
+$error_light_txt: var(--error_light_txt);
+$error_light_link: var(--error_light_link);
+$error_light_fill: var(--error_light_fill);
+
+/*ERROR*/
+$error: var(--error);
+$error_bg: var(--error_bg);
+$error_border: var(--error_border);
+$error_txt: var(--error_txt);
+$error_link: var(--error_link);
+$error_fill: var(--error_fill);
+
+/*ERROR DARK*/
+$error_dark: var(--error_dark);
+$error_dark_bg: var(--error_dark_bg);
+$error_dark_border: var(--error_dark_border);
+$error_dark_txt: var(--error_dark_txt);
+$error_dark_link: var(--error_dark_link);
+$error_dark_fill: var(--error_dark_fill);
+
+/*FOOTER*/
+$footer: var(--footer);
+$footer_bg: var(--footer_bg);
+$footer_border: var(--footer_border);
+$footer_txt: var(--footer_txt);
+$footer_link: var(--footer_link);
+$footer_fill: var(--footer_fill);
+
+/*HEADER*/
+$header: var(--header);
+$header_bg: var(--header_bg);
+$header_border: var(--header_border);
+$header_txt: var(--header_txt);
+$header_link: var(--header_link);
+$header_fill: var(--header_fill);
+
+$colors: () !default;
+
+$colors: map-merge(
+  (
+    /* PRIMARY LIGHT */ primary_light: var(--primary_light),
+    primary_light_bg: var(--primary_light_bg),
+    primary_light_border: var(--primary_light_border),
+    primary_light_txt: var(--primary_light_txt),
+    primary_light_link: var(--primary_light_link),
+    primary_light_fill: var(--primary_light_fill),
+    /* PRIMARY */ primary: var(--primary),
+    primary_bg: var(--primary_bg),
+    primary_border: var(--primary_border),
+    primary_txt: var(--primary_txt),
+    primary_link: var(--primary_link),
+    primary_fill: var(--primary_fill),
+    /* PRIMARY DARK */ primary_dark: var(--primary_dark),
+    primary_dark_bg: var(--primary_dark_bg),
+    primary_dark_border: var(--primary_dark_border),
+    primary_dark_txt: var(--primary_dark_txt),
+    primary_dark_link: var(--primary_dark_link),
+    primary_dark_fill: var(--primary_dark_fill),
+    /* SECONDARY LIGHT */ secondary_light: var(--secondary_light),
+    secondary_light_bg: var(--secondary_light_bg),
+    secondary_light_border: var(--secondary_light_border),
+    secondary_light_txt: var(--secondary_light_txt),
+    secondary_light_link: var(--secondary_light_link),
+    secondary_light_fill: var(--secondary_light_fill),
+    /* SECONDARY*/ secondary: var(--secondary),
+    secondary_bg: var(--secondary_bg),
+    secondary_border: var(--secondary_border),
+    secondary_txt: var(--secondary_txt),
+    secondary_link: var(--secondary_link),
+    secondary_fill: var(--secondary_fill),
+    /* SECONDARY DARK */ secondary_dark: var(--secondary_dark),
+    secondary_dark_bg: var(--secondary_dark_bg),
+    secondary_dark_border: var(--secondary_dark_border),
+    secondary_dark_txt: var(--secondary_dark_txt),
+    secondary_dark_link: var(--secondary_dark_link),
+    secondary_dark_fill: var(--secondary_dark_fill),
+    /* C-SCALE */ c-scale-1: var(--c-scale-1),
+    c-scale-1_bg: var(--c-scale-1_bg),
+    c-scale-1_border: var(--c-scale-1_border),
+    c-scale-1_txt: var(--c-scale-1_txt),
+    c-scale-1_link: var(--c-scale-1_link),
+    c-scale-1_fill: var(--c-scale-1_fill),
+    c-scale-2: var(--c-scale-2),
+    c-scale-2_bg: var(--c-scale-2_bg),
+    c-scale-2_border: var(--c-scale-2_border),
+    c-scale-2_txt: var(--c-scale-2_txt),
+    c-scale-2_link: var(--c-scale-2_link),
+    c-scale-2_fill: var(--c-scale-2_fill),
+    c-scale-3: var(--c-scale-3),
+    c-scale-3_bg: var(--c-scale-3_bg),
+    c-scale-3_border: var(--c-scale-3_border),
+    c-scale-3_txt: var(--c-scale-3_txt),
+    c-scale-3_link: var(--c-scale-3_link),
+    c-scale-3_fill: var(--c-scale-3_fill),
+    c-scale-4: var(--c-scale-4),
+    c-scale-4_bg: var(--c-scale-4_bg),
+    c-scale-4_border: var(--c-scale-4_border),
+    c-scale-4_txt: var(--c-scale-4_txt),
+    c-scale-4_link: var(--c-scale-4_link),
+    c-scale-4_fill: var(--c-scale-4_fill),
+    c-scale-5: var(--c-scale-5),
+    c-scale-5_bg: var(--c-scale-5_bg),
+    c-scale-5_border: var(--c-scale-5_border),
+    c-scale-5_txt: var(--c-scale-5_txt),
+    c-scale-5_link: var(--c-scale-5_link),
+    c-scale-5_fill: var(--c-scale-5_fill),
+    c-scale-6: var(--c-scale-6),
+    c-scale-6_bg: var(--c-scale-6_bg),
+    c-scale-6_border: var(--c-scale-6_border),
+    c-scale-6_txt: var(--c-scale-6_txt),
+    c-scale-6_link: var(--c-scale-6_link),
+    c-scale-6_fill: var(--c-scale-6_fill),
+    c-scale-7: var(--c-scale-7),
+    c-scale-7_bg: var(--c-scale-7_bg),
+    c-scale-7_border: var(--c-scale-7_border),
+    c-scale-7_txt: var(--c-scale-7_txt),
+    c-scale-7_link: var(--c-scale-7_link),
+    c-scale-7_fill: var(--c-scale-7_fill),
+    c-scale-8: var(--c-scale-8),
+    c-scale-8_bg: var(--c-scale-8_bg),
+    c-scale-8_border: var(--c-scale-8_border),
+    c-scale-8_txt: var(--c-scale-8_txt),
+    c-scale-8_link: var(--c-scale-8_link),
+    c-scale-9: var(--c-scale-9),
+    c-scale-9_bg: var(--c-scale-9_bg),
+    c-scale-9_border: var(--c-scale-9_border),
+    c-scale-9_txt: var(--c-scale-9_txt),
+    c-scale-9_link: var(--c-scale-9_link),
+    c-scale-9_fill: var(--c-scale-9_fill),
+    c-scale-10: var(--c-scale-10),
+    c-scale-10_bg: var(--c-scale-10_bg),
+    c-scale-10_border: var(--c-scale-10_border),
+    c-scale-10_txt: var(--c-scale-10_txt),
+    c-scale-10_link: var(--c-scale-10_link),
+    c-scale-10_fill: var(--c-scale-10_fill),
+    c-scale-11: var(--c-scale-11),
+    c-scale-11_bg: var(--c-scale-11_bg),
+    c-scale-11_border: var(--c-scale-11_border),
+    c-scale-11_txt: var(--c-scale-11_txt),
+    c-scale-11_link: var(--c-scale-11_link),
+    c-scale-11_fill: var(--c-scale-11_fill),
+    c-scale-12: var(--c-scale-12),
+    c-scale-12_bg: var(--c-scale-12_bg),
+    c-scale-12_border: var(--c-scale-12_border),
+    c-scale-12_txt: var(--c-scale-12_txt),
+    c-scale-12_link: var(--c-scale-12_link),
+    c-scale-12_fill: var(--c-scale-12_fill),
+    /* WHITE */ white: var(--white),
+    white_bg: var(--white_bg),
+    white_border: var(--white_border),
+    white_txt: var(--white_txt),
+    white_link: var(--white_link),
+    white_fill: var(--white_fill),
+    /* BLACK */ black: var(--black),
+    black_bg: var(--black_bg),
+    black_border: var(--black_border),
+    black_txt: var(--black_txt),
+    black_link: var(--black_link),
+    black_fill: var(--black_fill),
+    /* INFO  LIGHT*/ info_light: var(--info_light),
+    info_light_bg: var(--info_light_bg),
+    info_light_border: var(--info_light_border),
+    info_light_txt: var(--info_light_txt),
+    info_light_link: var(--info_light_link),
+    info_light_fill: var(--info_light_fill),
+    /* INFO */ info: var(--info),
+    info_bg: var(--info_bg),
+    info_border: var(--info_border),
+    info_txt: var(--info_txt),
+    info_link: var(--info_link),
+    info_fill: var(--info_fill),
+    /* INFO DARK */ info_dark: var(--info_dark),
+    info_dark_bg: var(--info_dark_bg),
+    info_dark_border: var(--info_dark_border),
+    info_dark_txt: var(--info_dark_txt),
+    info_dark_link: var(--info_dark_link),
+    info_dark_fill: var(--info_dark_fill),
+    /* SUCCESS  LIGHT*/ success_light: var(--success_light),
+    success_light_bg: var(--success_light_bg),
+    success_light_border: var(--success_light_border),
+    success_light_txt: var(--success_light_txt),
+    success_light_link: var(--success_light_link),
+    success_light_fill: var(--success_light_fill),
+    /* SUCCESS*/ success: var(--success),
+    success_bg: var(--success_bg),
+    success_border: var(--success_border),
+    success_txt: var(--success_txt),
+    success_link: var(--success_link),
+    success_fill: var(--success_fill),
+    /* SUCCESS  DARK*/ success_dark: var(--success_dark),
+    success_dark_bg: var(--success_dark_bg),
+    success_dark_border: var(--success_dark_border),
+    success_dark_txt: var(--success_dark_txt),
+    success_dark_link: var(--success_dark_link),
+    success_dark_fill: var(--success_dark_fill),
+    /* WARNING  LIGHT*/ warning_light: var(--warning_light),
+    warning_light_bg: var(--warning_light_bg),
+    warning_light_border: var(--warning_light_border),
+    warning_light_txt: var(--warning_light_txt),
+    warning_light_link: var(--warning_light_link),
+    warning_light_fill: var(--warning_light_fill),
+    /* WARNING*/ warning: var(--warning),
+    warning_bg: var(--warning_bg),
+    warning_border: var(--warning_border),
+    warning_txt: var(--warning_txt),
+    warning_link: var(--warning_link),
+    warning_fill: var(--warning_fill),
+    /* WARNING DARK*/ warning_dark: var(--warning_dark),
+    warning_dark_bg: var(--warning_dark_bg),
+    warning_dark_border: var(--warning_dark_border),
+    warning_dark_txt: var(--warning_dark_txt),
+    warning_dark_link: var(--warning_dark_link),
+    warning_dark_fill: var(--warning_dark_fill),
+    /*ERROR LIGHT*/ error_light: var(--error_light),
+    error_light_bg: var(--error_light_bg),
+    error_light_border: var(--error_light_border),
+    error_light_txt: var(--error_light_txt),
+    error_light_link: var(--error_light_link),
+    error_light_fill: var(--error_light_fill),
+    /*ERROR*/ error: var(--error),
+    error_bg: var(--error_bg),
+    error_border: var(--error_border),
+    error_txt: var(--error_txt),
+    error_link: var(--error_link),
+    error_fill: var(--error_fill),
+    /*ERROR DARK*/ error_dark: var(--error_dark),
+    error_dark_bg: var(--error_dark_bg),
+    error_dark_border: var(--error_dark_border),
+    error_dark_txt: var(--error_dark_txt),
+    error_dark_link: var(--error_dark_link),
+    error_dark_fill: var(--error_dark_fill),
+    /*FOOTER*/ footer: var(--footer),
+    footer_bg: var(--footer_bg),
+    footer_border: var(--footer_border),
+    footer_txt: var(--footer_txt),
+    footer_link: var(--footer_link),
+    footer_fill: var(--footer_fill),
+    /*HEADER*/ header: var(--header),
+    header_bg: var(--header_bg),
+    header_border: var(--header_border),
+    header_txt: var(--header_txt),
+    header_link: var(--header_link),
+    header_fill: var(--header_fill)
+  ),
+  $colors
+);
+
+/****** SVG FILLS *********/
+$svg-fills: () !default;
+$svg-fills: map-merge(
+  (
+    "fill-primary_light": var(--primary_light_fill),
+    "fill-primary": var(--primary_fill),
+    "fill-primary_dark": var(--primary_dark_fill),
+    "fill-secondary_light": var(--secondary_light_fill),
+    "fill-secondary": var(--secondary_fill),
+    "fill-secondary_dark": var(--secondary_dark_fill),
+    "fill-info_light": var(--info_light_fill),
+    "fill-info": var(--info_fill),
+    "fill-info_dark": var(--info_dark_fill),
+    "fill-success_light": var(--success_light_fill),
+    "fill-success": var(--success_fill),
+    "fill-success_dark": var(--success_dark_fill),
+    "fill-warning_light": var(--warning_light_fill),
+    "fill-warning": var(--warning_fill),
+    "fill-warning_dark": var(--warning_dark_fill),
+    "fill-error_light": var(--error_light_fill),
+    "fill-error": var(--error_fill),
+    "fill-error_dark": var(--error_dark_fill),
+    "fill-white": var(--white_fill),
+    "fill-c-scale-1": var(--c-scale-1_fill),
+    "fill-c-scale-2": var(--c-scale-2_fill),
+    "fill-c-scale-3": var(--c-scale-3_fill),
+    "fill-c-scale-4": var(--c-scale-4_fill),
+    "fill-c-scale-5": var(--c-scale-5_fill),
+    "fill-c-scale-6": var(--c-scale-6_fill),
+    "fill-c-scale-7": var(--c-scale-7_fill),
+    "fill-c-scale-8": var(--c-scale-8_fill),
+    "fill-c-scale-9": var(--c-scale-9_fill),
+    "fill-c-scale-10": var(--c-scale-10_fill),
+    "fill-c-scale-11": var(--c-scale-11_fill),
+    "fill-c-scale-12": var(--c-scale-12_fill),
+    "fill-black": var(--black_fill),
+    "fill-header": var(--header_fill),
+    "fill-footer": var(--footer_fill),
+  ),
+  $svg-fills
+);
+
+/****** BUTTONS COLORS *********/
+$button-color: () !default;
+$button-color: map-merge(
+  (
+    "primary": var(--primary),
+    "secondary": var(--secondary),
+    "info": var(--info),
+    "success": var(--success),
+    "warning": var(--warning),
+    "error": var(--error),
+  ),
+  $button-color
+);
+/****** BUTTONS COLORS C-SCALE *********/
+$button-color-scale: () !default;
+$button-color-scale: map-merge(
+  (
+    "c-scale-9": var(--c-scale-9),
+    "c-scale-10": var(--c-scale-10),
+    "c-scale-11": var(--c-scale-11),
+    "c-scale-12": var(--c-scale-12),
+  ),
+  $button-color-scale
+);
+
+$button-color-all: () !default;
+$button-color-all: map-merge($button-color-scale, $button-color);
+
+/****** BUTTONS COLORS LIGHT*********/
+$colors-light: () !default;
+$colors-light: map-merge(
+  (
+    "primary_light": primary,
+    "secondary_light": secondary,
+    "info_light": info,
+    "success_light": success,
+    "warning_light": warning,
+    "error_light": error,
+  ),
+  $colors-light
+);
+
+/****** BUTTONS COLORS DARK*********/
+$colors-dark: () !default;
+$colors-dark: map-merge(
+  (
+    "primary_dark": primary,
+    "secondary_dark": secondary,
+    "info_dark": info,
+    "success_dark": success,
+    "warning_dark": warning,
+    "error_dark": error,
+  ),
+  $colors-dark
+);
+
+/****** BUTTONS COLORS REGULAR*********/
+$colors-regular: () !default;
+$colors-regular: map-merge(
+  (
+    "primary": var(--primary),
+    "secondary": var(--secondary),
+    "info": var(--info),
+    "success": var(--success),
+    "warning": var(--warning),
+    "error": var(--error),
+    "c-scale-1": var(--c-scale-1),
+    "c-scale-2": var(--c-scale-2),
+    "c-scale-3": var(--c-scale-3),
+    "c-scale-4": var(--c-scale-4),
+    "c-scale-5": var(--c-scale-5),
+    "c-scale-6": var(--c-scale-6),
+    "c-scale-7": var(--c-scale-7),
+    "c-scale-8": var(--c-scale-8),
+    "c-scale-9": var(--c-scale-9),
+    "c-scale-10": var(--c-scale-10),
+    "c-scale-11": var(--c-scale-11),
+    "c-scale-12": var(--c-scale-12),
+  ),
+  $colors-regular
+);
+
+/****** Fonts *********/
+$font_size_1: 12;
+$font_size_2: 14;
+$font_size_3: 16;
+$font_size_4: 18;
+$font_size_5: 22;
+$font_size_6: 26;
+$font_size_7: 32;
+$font_size_8: 48;
+
+/****** FONT WEIGHT *********/
+$font-weight: (
+  light: var(--font_weight_light),
+  regular: var(--font_weight_regular),
+  semibold: var(--font_weight_semibold),
+  bold: var(--font_weight_bold),
+);
+
+$font-sizes: (
+  h1: $font_size_8,
+  h2: $font_size_7,
+  h3: $font_size_6,
+  h4: $font_size_5,
+  h5: $font_size_4,
+  h6: $font_size_3,
+  h7: $font_size_2,
+  h8: $font_size_1,
+);
+
+/****** Breakpoints *********/
+$grid_breakpoints: () !default;
+
+$grid_breakpoints: (
+  xxs: 0px,
+  xs: 168px,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+) !default;
+
+$newBreakPoints: map-merge(
+  $grid_breakpoints,
+  (
+    "": 0,
+  )
+);
+
+/****** Spacing *********/
+// Control the default styling of most Bootstrap elements by modifying these
+// variables. Mostly focused on spacing.
+// You can add more entries to the $spacers map, should you need more variation.
+
+$spacer: 1rem !default;
+$spacers: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$spacers: map-merge(
+  (
+    0: 0,
+    1: (
+      $spacer * 0.25,
+    ),
+    2: (
+      $spacer * 0.5,
+    ),
+    3: $spacer,
+    4: (
+      $spacer * 1.5,
+    ),
+    5: (
+      $spacer * 3,
+    ),
+  ),
+  $spacers
+);
+
+/****** This variable affects the `.h-*` and `.w-*` classes. *********/
+$sizes: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$sizes: map-merge(
+  (
+    25: 25%,
+    50: 50%,
+    75: 75%,
+    100: 100%,
+    auto: auto,
+  ),
+  $sizes
+);
+
+/****** Links *********/
+$emphasized-link-hover-darken-percentage: 15% !default;
+
+/****** Utilities *********/
+$displays: none, inline, inline-block, block, table, table-row, table-cell, flex,
+  inline-flex !default;
+$overflows: auto, hidden !default;
+$positions: static, relative, absolute, fixed, sticky !default;
+
+/****** Z-index master list *********/
+$zindex_dropdown: 1000 !default;
+$zindex_sticky: 1020 !default;
+$zindex_fixed: 1030 !default;
+$zindex_modal_backdrop: 1040 !default;
+$zindex_modal: 1050 !default;
+$zindex_popover: 1060 !default;
+$zindex_tooltip: 1070 !default;
+
+/****** Shadows *********/
+$box_shadow_sm: 0 tbu(px(2)) tbu(px(4)) rgba(var(--black), 0.075);
+$box_shadow: 0 tbu(px(8)) tbu(px(16)) rgba(var(--black), 0.15);
+$box_shadow_lg: 0 tbu(px(16)) tbu(px(48)) rgba(var(--black), 0.175);

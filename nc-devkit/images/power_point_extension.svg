@@ -1,0 +1,8 @@
+<svg id="power_point_extension" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+  <rect id="shape" width="100" height="100" fill="none"/>
+  <g id="power_point" transform="translate(13.006)">
+    <path id="Path_19927" data-name="Path 19927" d="M12.866.627H45.957L74,30.169V87.624a12.959,12.959,0,0,1-12.866,13H12.866A12.94,12.94,0,0,1,0,87.624V13.63a12.92,12.92,0,0,1,12.866-13Z" transform="translate(0 -0.627)" fill="#e03303" fill-rule="evenodd"/>
+    <path id="Path_19928" data-name="Path 19928" d="M237.082.627v29.3h28.073Z" transform="translate(-191.155 -0.627)" fill="rgba(255,255,255,0.3)" fill-rule="evenodd"/>
+    <path id="Path_19929" data-name="Path 19929" d="M130.244,242.871a14.6,14.6,0,1,0,15.248,15.294.664.664,0,0,0-.671-.7h-13.2a.7.7,0,0,1-.7-.672V243.543a.656.656,0,0,0-.671-.672Zm3.516-2.144v13.214a.656.656,0,0,0,.671.672h13.234a.683.683,0,0,0,.671-.7,14.572,14.572,0,0,0-13.874-13.854.663.663,0,0,0-.7.672Z" transform="translate(-95.338 -192.053)" fill="#fff"/>
+  </g>
+</svg>

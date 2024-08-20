@@ -1,0 +1,27 @@
+* {
+  font-family: var(--font_primary);
+  box-sizing: border-box;
+  user-select: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--white_bg);
+}
+
+ul {
+  padding-left: 0;
+  li {
+    list-style: none;
+  }
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}

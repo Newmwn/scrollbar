@@ -1,0 +1,239 @@
+<svg id="image-entities" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1560" height="150" viewBox="0 0 1560 150">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="shape" width="1560" height="150" transform="translate(-802 6452)" fill="#fcfcfc"/>
+    </clipPath>
+  </defs>
+  <g id="image" transform="translate(802 -6452)" clip-path="url(#clip-path)">
+    <g id="content" transform="translate(-982.55 6194.827)" style="isolation: isolate">
+      <rect id="secondary-dark" width="1585" height="193" transform="translate(1747.55 430.173) rotate(180)" fill="#252525"/>
+      <g id="primary_5_" data-name="primary 5%" transform="translate(446.171 281.602) rotate(150)" opacity="0.05">
+        <path id="circle" d="M135.031.36a134.076,134.076,0,0,1,134.25,134.491c-.116,74.393-60.409,134.794-134.668,134.91A134.076,134.076,0,0,1,.363,135.27C.478,60.877,60.771.476,135.031.36Z" transform="translate(212.942 347.792) rotate(-150)" fill="#28aaca"/>
+        <path id="circle-2" data-name="circle" d="M76.837,0A77.114,77.114,0,1,1,0,77.113,76.976,76.976,0,0,1,76.837,0Z" transform="translate(-352.094 -89.867) rotate(-150)" fill="#28aaca"/>
+      </g>
+      <g id="scale1_10_" data-name="scale1 10%" transform="translate(525.074 219.537)" opacity="0.1" style="mix-blend-mode: color-dodge;isolation: isolate">
+        <path id="line" d="M2.681.034,6.409.027,5.6,448.468l-3.728.007Z" transform="matrix(0.707, -0.707, 0.707, 0.707, 0, 4.513)" fill="#fcfcfc" stroke="#fcfcfc" stroke-width="1"/>
+        <path id="line-2" data-name="line" d="M3.365.036,7.093.03,6.083,562.825l-3.729.007Z" transform="translate(82.344 -28.537) rotate(-45)" fill="#fcfcfc" stroke="#fcfcfc" stroke-width="1"/>
+        <path id="line-3" data-name="line" d="M2.681.034,6.409.027,5.6,448.468l-3.728.007Z" transform="matrix(0.707, -0.707, 0.707, 0.707, 589.879, -70.485)" fill="#fcfcfc" stroke="#fcfcfc" stroke-width="1"/>
+        <path id="line-4" data-name="line" d="M3.363.036,7.091.03,6.082,562.86l-3.728.007Z" transform="matrix(0.719, -0.695, 0.695, 0.719, 760.353, -107.052)" fill="#fcfcfc" stroke="#fcfcfc" stroke-width="1"/>
+      </g>
+      <g id="scale5" transform="matrix(0.719, -0.695, 0.695, 0.719, 1177.339, 182.7)">
+        <path id="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(3.746 0.632)" fill="#dedede"/>
+        <path id="dot-2" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(20.928 0.601)" fill="#dedede"/>
+        <path id="dot-3" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(38.111 0.57)" fill="#dedede"/>
+        <path id="dot-4" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(55.294 0.539)" fill="#dedede"/>
+        <path id="dot-5" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(72.476 0.508)" fill="#dedede"/>
+        <path id="dot-6" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(89.659 0.478)" fill="#dedede"/>
+        <path id="dot-7" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(106.841 0.447)" fill="#dedede"/>
+        <path id="dot-8" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(3.706 23.006)" fill="#dedede"/>
+        <path id="dot-9" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(20.888 22.975)" fill="#dedede"/>
+        <path id="dot-10" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(38.071 22.944)" fill="#dedede"/>
+        <path id="dot-11" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(55.253 22.913)" fill="#dedede"/>
+        <path id="dot-12" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(72.436 22.883)" fill="#dedede"/>
+        <path id="dot-13" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(89.619 22.852)" fill="#dedede"/>
+        <path id="dot-14" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(106.801 22.821)" fill="#dedede"/>
+        <path id="dot-15" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(3.666 45.38)" fill="#dedede"/>
+        <path id="dot-16" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(20.848 45.349)" fill="#dedede"/>
+        <path id="dot-17" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(38.031 45.319)" fill="#dedede"/>
+        <path id="dot-18" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(55.213 45.288)" fill="#dedede"/>
+        <path id="dot-19" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(72.396 45.257)" fill="#dedede"/>
+        <path id="dot-20" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(89.578 45.226)" fill="#dedede"/>
+        <path id="dot-21" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(106.761 45.195)" fill="#dedede"/>
+        <path id="dot-22" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(3.626 67.754)" fill="#dedede"/>
+        <path id="dot-23" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(20.808 67.724)" fill="#dedede"/>
+        <path id="dot-24" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(37.991 67.693)" fill="#dedede"/>
+        <path id="dot-25" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(55.173 67.662)" fill="#dedede"/>
+        <path id="dot-26" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(72.356 67.631)" fill="#dedede"/>
+        <path id="dot-27" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(89.538 67.6)" fill="#dedede"/>
+        <path id="dot-28" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(106.721 67.57)" fill="#dedede"/>
+        <path id="dot-29" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(3.585 90.129)" fill="#dedede"/>
+        <path id="dot-30" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(20.768 90.098)" fill="#dedede"/>
+        <path id="dot-31" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(37.951 90.067)" fill="#dedede"/>
+        <path id="dot-32" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(55.133 90.036)" fill="#dedede"/>
+        <path id="dot-33" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(72.316 90.005)" fill="#dedede"/>
+        <path id="dot-34" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(89.498 89.975)" fill="#dedede"/>
+        <path id="dot-35" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(106.681 89.944)" fill="#dedede"/>
+        <path id="dot-36" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(3.545 112.503)" fill="#dedede"/>
+        <path id="dot-37" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(20.728 112.472)" fill="#dedede"/>
+        <path id="dot-38" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(37.91 112.441)" fill="#dedede"/>
+        <path id="dot-39" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(55.093 112.411)" fill="#dedede"/>
+        <path id="dot-40" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(72.276 112.38)" fill="#dedede"/>
+        <path id="dot-41" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(89.458 112.349)" fill="#dedede"/>
+        <path id="dot-42" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(106.641 112.318)" fill="#dedede"/>
+        <path id="dot-43" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(3.505 134.877)" fill="#dedede"/>
+        <path id="dot-44" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(20.688 134.846)" fill="#dedede"/>
+        <path id="dot-45" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(37.87 134.816)" fill="#dedede"/>
+        <path id="dot-46" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(55.053 134.785)" fill="#dedede"/>
+        <path id="dot-47" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(72.235 134.754)" fill="#dedede"/>
+        <path id="dot-48" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(89.418 134.723)" fill="#dedede"/>
+        <path id="dot-49" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(106.6 134.692)" fill="#dedede"/>
+        <path id="dot-50" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(3.465 157.252)" fill="#dedede"/>
+        <path id="dot-51" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(20.648 157.221)" fill="#dedede"/>
+        <path id="dot-52" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(37.83 157.19)" fill="#dedede"/>
+        <path id="dot-53" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(55.013 157.159)" fill="#dedede"/>
+        <path id="dot-54" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(72.195 157.128)" fill="#dedede"/>
+        <path id="dot-55" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(89.378 157.097)" fill="#dedede"/>
+        <path id="dot-56" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(106.56 157.067)" fill="#dedede"/>
+        <path id="dot-57" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(3.425 179.626)" fill="#dedede"/>
+        <path id="dot-58" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(20.608 179.595)" fill="#dedede"/>
+        <path id="dot-59" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(37.79 179.564)" fill="#dedede"/>
+        <path id="dot-60" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(54.973 179.533)" fill="#dedede"/>
+        <path id="dot-61" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(72.155 179.503)" fill="#dedede"/>
+        <path id="dot-62" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(89.338 179.472)" fill="#dedede"/>
+        <path id="dot-63" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(106.52 179.441)" fill="#dedede"/>
+        <path id="dot-64" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(3.385 202)" fill="#dedede"/>
+        <path id="dot-65" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(20.567 201.969)" fill="#dedede"/>
+        <path id="dot-66" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(37.75 201.938)" fill="#dedede"/>
+        <path id="dot-67" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(54.932 201.908)" fill="#dedede"/>
+        <path id="dot-68" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(72.115 201.877)" fill="#dedede"/>
+        <path id="dot-69" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(89.298 201.846)" fill="#dedede"/>
+        <path id="dot-70" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(106.48 201.815)" fill="#dedede"/>
+        <path id="dot-71" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(3.345 224.374)" fill="#dedede"/>
+        <path id="dot-72" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(20.527 224.344)" fill="#dedede"/>
+        <path id="dot-73" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(37.71 224.313)" fill="#dedede"/>
+        <path id="dot-74" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(54.892 224.282)" fill="#dedede"/>
+        <path id="dot-75" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(72.075 224.251)" fill="#dedede"/>
+        <path id="dot-76" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(89.257 224.22)" fill="#dedede"/>
+        <path id="dot-77" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(106.44 224.19)" fill="#dedede"/>
+        <path id="dot-78" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(3.305 246.749)" fill="#dedede"/>
+        <path id="dot-79" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(20.487 246.718)" fill="#dedede"/>
+        <path id="dot-80" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(37.67 246.687)" fill="#dedede"/>
+        <path id="dot-81" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(54.852 246.656)" fill="#dedede"/>
+        <path id="dot-82" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(72.035 246.625)" fill="#dedede"/>
+        <path id="dot-83" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(89.217 246.595)" fill="#dedede"/>
+        <path id="dot-84" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(106.4 246.564)" fill="#dedede"/>
+        <path id="dot-85" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(3.265 269.123)" fill="#dedede"/>
+        <path id="dot-86" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(20.447 269.092)" fill="#dedede"/>
+        <path id="dot-87" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(37.63 269.061)" fill="#dedede"/>
+        <path id="dot-88" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(54.812 269.03)" fill="#dedede"/>
+        <path id="dot-89" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(71.995 269)" fill="#dedede"/>
+        <path id="dot-90" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(89.177 268.969)" fill="#dedede"/>
+        <path id="dot-91" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(106.36 268.938)" fill="#dedede"/>
+        <path id="dot-92" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(3.224 291.497)" fill="#dedede"/>
+        <path id="dot-93" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(20.407 291.466)" fill="#dedede"/>
+        <path id="dot-94" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(37.59 291.436)" fill="#dedede"/>
+        <path id="dot-95" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(54.772 291.405)" fill="#dedede"/>
+        <path id="dot-96" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(71.955 291.374)" fill="#dedede"/>
+        <path id="dot-97" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(89.137 291.343)" fill="#dedede"/>
+        <path id="dot-98" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(106.32 291.312)" fill="#dedede"/>
+        <path id="dot-99" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(3.184 313.871)" fill="#dedede"/>
+        <path id="dot-100" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(20.367 313.841)" fill="#dedede"/>
+        <path id="dot-101" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(37.549 313.81)" fill="#dedede"/>
+        <path id="dot-102" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(54.732 313.779)" fill="#dedede"/>
+        <path id="dot-103" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(71.914 313.748)" fill="#dedede"/>
+        <path id="dot-104" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(89.097 313.717)" fill="#dedede"/>
+        <path id="dot-105" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(106.28 313.687)" fill="#dedede"/>
+        <path id="dot-106" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(3.144 336.246)" fill="#dedede"/>
+        <path id="dot-107" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(20.327 336.215)" fill="#dedede"/>
+        <path id="dot-108" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(37.509 336.184)" fill="#dedede"/>
+        <path id="dot-109" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(54.692 336.153)" fill="#dedede"/>
+        <path id="dot-110" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(71.874 336.123)" fill="#dedede"/>
+        <path id="dot-111" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(89.057 336.092)" fill="#dedede"/>
+        <path id="dot-112" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(106.239 336.061)" fill="#dedede"/>
+        <path id="dot-113" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(3.104 358.62)" fill="#dedede"/>
+        <path id="dot-114" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(20.287 358.589)" fill="#dedede"/>
+        <path id="dot-115" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(37.469 358.558)" fill="#dedede"/>
+        <path id="dot-116" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(54.652 358.528)" fill="#dedede"/>
+        <path id="dot-117" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(71.834 358.497)" fill="#dedede"/>
+        <path id="dot-118" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(89.017 358.466)" fill="#dedede"/>
+        <path id="dot-119" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(106.199 358.435)" fill="#dedede"/>
+        <path id="dot-120" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(3.064 380.994)" fill="#dedede"/>
+        <path id="dot-121" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(20.246 380.964)" fill="#dedede"/>
+        <path id="dot-122" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(37.429 380.933)" fill="#dedede"/>
+        <path id="dot-123" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(54.612 380.902)" fill="#dedede"/>
+        <path id="dot-124" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(71.794 380.871)" fill="#dedede"/>
+        <path id="dot-125" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(88.977 380.84)" fill="#dedede"/>
+        <path id="dot-126" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(106.159 380.809)" fill="#dedede"/>
+        <path id="dot-127" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(3.024 403.369)" fill="#dedede"/>
+        <path id="dot-128" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(20.206 403.338)" fill="#dedede"/>
+        <path id="dot-129" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(37.389 403.307)" fill="#dedede"/>
+        <path id="dot-130" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(54.571 403.276)" fill="#dedede"/>
+        <path id="dot-131" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(71.754 403.245)" fill="#dedede"/>
+        <path id="dot-132" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(88.937 403.215)" fill="#dedede"/>
+        <path id="dot-133" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(106.119 403.184)" fill="#dedede"/>
+        <path id="dot-134" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(2.984 425.743)" fill="#dedede"/>
+        <path id="dot-135" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(20.166 425.712)" fill="#dedede"/>
+        <path id="dot-136" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(37.349 425.681)" fill="#dedede"/>
+        <path id="dot-137" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(54.531 425.65)" fill="#dedede"/>
+        <path id="dot-138" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(71.714 425.62)" fill="#dedede"/>
+        <path id="dot-139" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(88.896 425.589)" fill="#dedede"/>
+        <path id="dot-140" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(106.079 425.558)" fill="#dedede"/>
+        <path id="dot-141" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(2.944 448.117)" fill="#dedede"/>
+        <path id="dot-142" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(20.126 448.086)" fill="#dedede"/>
+        <path id="dot-143" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(37.309 448.056)" fill="#dedede"/>
+        <path id="dot-144" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(54.491 448.025)" fill="#dedede"/>
+        <path id="dot-145" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(71.674 447.994)" fill="#dedede"/>
+        <path id="dot-146" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(88.856 447.963)" fill="#dedede"/>
+        <path id="dot-147" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(106.039 447.932)" fill="#dedede"/>
+        <path id="dot-148" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(2.903 470.491)" fill="#dedede"/>
+        <path id="dot-149" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(20.086 470.461)" fill="#dedede"/>
+        <path id="dot-150" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(37.269 470.43)" fill="#dedede"/>
+        <path id="dot-151" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(54.451 470.399)" fill="#dedede"/>
+        <path id="dot-152" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(71.634 470.368)" fill="#dedede"/>
+        <path id="dot-153" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(88.816 470.337)" fill="#dedede"/>
+        <path id="dot-154" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(105.999 470.307)" fill="#dedede"/>
+        <path id="dot-155" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(2.863 492.866)" fill="#dedede"/>
+        <path id="dot-156" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(20.046 492.835)" fill="#dedede"/>
+        <path id="dot-157" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(37.228 492.804)" fill="#dedede"/>
+        <path id="dot-158" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(54.411 492.773)" fill="#dedede"/>
+        <path id="dot-159" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(71.594 492.742)" fill="#dedede"/>
+        <path id="dot-160" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(88.776 492.712)" fill="#dedede"/>
+        <path id="dot-161" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(105.959 492.681)" fill="#dedede"/>
+        <path id="dot-162" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(2.823 515.24)" fill="#dedede"/>
+        <path id="dot-163" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(20.006 515.209)" fill="#dedede"/>
+        <path id="dot-164" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(37.188 515.178)" fill="#dedede"/>
+        <path id="dot-165" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(54.371 515.148)" fill="#dedede"/>
+        <path id="dot-166" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(71.553 515.117)" fill="#dedede"/>
+        <path id="dot-167" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(88.736 515.086)" fill="#dedede"/>
+        <path id="dot-168" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(105.918 515.055)" fill="#dedede"/>
+        <path id="dot-169" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(2.783 537.614)" fill="#dedede"/>
+        <path id="dot-170" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(19.966 537.583)" fill="#dedede"/>
+        <path id="dot-171" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(37.148 537.553)" fill="#dedede"/>
+        <path id="dot-172" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(54.331 537.522)" fill="#dedede"/>
+        <path id="dot-173" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(71.513 537.491)" fill="#dedede"/>
+        <path id="dot-174" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(88.696 537.46)" fill="#dedede"/>
+        <path id="dot-175" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(105.878 537.429)" fill="#dedede"/>
+        <path id="dot-176" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(2.743 559.989)" fill="#dedede"/>
+        <path id="dot-177" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(19.926 559.958)" fill="#dedede"/>
+        <path id="dot-178" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(37.108 559.927)" fill="#dedede"/>
+        <path id="dot-179" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(54.291 559.896)" fill="#dedede"/>
+        <path id="dot-180" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(71.473 559.865)" fill="#dedede"/>
+        <path id="dot-181" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(88.656 559.834)" fill="#dedede"/>
+        <path id="dot-182" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(105.838 559.804)" fill="#dedede"/>
+        <path id="dot-183" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(2.703 582.363)" fill="#dedede"/>
+        <path id="dot-184" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(19.885 582.332)" fill="#dedede"/>
+        <path id="dot-185" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(37.068 582.301)" fill="#dedede"/>
+        <path id="dot-186" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(54.251 582.27)" fill="#dedede"/>
+        <path id="dot-187" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(71.433 582.24)" fill="#dedede"/>
+        <path id="dot-188" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(88.616 582.209)" fill="#dedede"/>
+        <path id="dot-189" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(105.798 582.178)" fill="#dedede"/>
+        <path id="dot-190" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(2.663 604.737)" fill="#dedede"/>
+        <path id="dot-191" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(19.845 604.706)" fill="#dedede"/>
+        <path id="dot-192" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(37.028 604.675)" fill="#dedede"/>
+        <path id="dot-193" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(54.21 604.645)" fill="#dedede"/>
+        <path id="dot-194" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(71.393 604.614)" fill="#dedede"/>
+        <path id="dot-195" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(88.575 604.583)" fill="#dedede"/>
+        <path id="dot-196" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(105.758 604.552)" fill="#dedede"/>
+        <path id="dot-197" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(2.623 627.111)" fill="#dedede"/>
+        <path id="dot-198" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(19.805 627.081)" fill="#dedede"/>
+        <path id="dot-199" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(36.988 627.05)" fill="#dedede"/>
+        <path id="dot-200" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(54.17 627.019)" fill="#dedede"/>
+        <path id="dot-201" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(71.353 626.988)" fill="#dedede"/>
+        <path id="dot-202" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(88.535 626.957)" fill="#dedede"/>
+        <path id="dot-203" data-name="dot" d="M3.308.014A3.288,3.288,0,1,1,.014,3.308,3.274,3.274,0,0,1,3.308.014Z" transform="translate(105.718 626.927)" fill="#dedede"/>
+      </g>
+      <g id="primary">
+        <path id="circle-3" data-name="circle" d="M55.543,0A55.743,55.743,0,1,1,0,55.743,55.643,55.643,0,0,1,55.543,0Z" transform="translate(817.321 204.752)" fill="#28aaca"/>
+        <path id="circle-4" data-name="circle" d="M99.3.36A98.958,98.958,0,1,1,.363,99.471,98.5,98.5,0,0,1,99.3.36Z" transform="translate(123.541 122.619)" fill="#28aaca"/>
+      </g>
+      <g id="primary-light_5_" data-name="primary-light 5%" opacity="0.05">
+        <path id="circle-5" data-name="circle" d="M128.774,0c71.12,0,128.774,57.861,128.774,129.237S199.894,258.474,128.774,258.474,0,200.613,0,129.237,57.654,0,128.774,0Z" transform="translate(988.996 346.486)" fill="#94d4e4"/>
+        <path id="circle-6" data-name="circle" d="M38.328,0A38.466,38.466,0,1,1,0,38.466,38.4,38.4,0,0,1,38.328,0Z" transform="translate(1604.871 264.326)" fill="#94d4e4"/>
+      </g>
+      <g id="primary-light">
+        <path id="circle-7" data-name="circle" d="M28.777,0A28.88,28.88,0,1,1,0,28.88,28.828,28.828,0,0,1,28.777,0Z" transform="translate(1614.423 273.912)" fill="#94d4e4"/>
+        <path id="circle-8" data-name="circle" d="M98.691,0c54.506,0,98.691,44.344,98.691,99.046S153.2,198.092,98.691,198.092,0,153.748,0,99.046,44.186,0,98.691,0Z" transform="translate(1019.079 376.677)" fill="#94d4e4"/>
+      </g>
+    </g>
+  </g>
+</svg>

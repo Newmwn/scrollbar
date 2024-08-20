@@ -1,0 +1,42 @@
+@import '../../../scss/index.scss';
+@import '../../../scss/utilities/tbu';
+
+:host {
+  display: block;
+  height: 100%;
+  width: 100%;
+  padding: var(--padding);
+  box-sizing: border-box;
+  position: relative;
+}
+
+.scrollbar-container {
+  height: var(--scrollHeight);
+  max-height: 100%;
+  overflow: auto;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  &--fake-scrollbar {
+    position: absolute;
+    top: 0;
+    right: calc(var(--padding) + tbu(px(2)));
+    width: 6px;
+    height: 100%;
+    &__thumb {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: var(--thumbSize);
+      background: gray;
+    }
+    &__track {
+    }
+  }
+}
+
+.disabled {
+  pointer-events: none;
+  overflow: hidden;
+  opacity: 0.4;
+}

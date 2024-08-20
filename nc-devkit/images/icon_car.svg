@@ -1,0 +1,13 @@
+<svg id="icon_car" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100" height="100" viewBox="0 0 100 100">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_3201" data-name="Rectangle 3201" width="94" height="82" fill="#181818"/>
+    </clipPath>
+  </defs>
+  <rect id="shape" width="100" height="100" fill="none"/>
+  <g id="Group_15962" data-name="Group 15962" transform="translate(3 9)">
+    <g id="Group_15961" data-name="Group 15961" clip-path="url(#clip-path)">
+      <path id="Path_50372" data-name="Path 50372" d="M83.138,5.176A7.793,7.793,0,0,0,75.722,0H18.278a7.844,7.844,0,0,0-7.416,5.176L.574,34.235A10.463,10.463,0,0,0,0,37.618v36.7A7.751,7.751,0,0,0,7.833,82a7.751,7.751,0,0,0,7.833-7.687V71.75H78.333v2.563a7.835,7.835,0,0,0,15.667,0v-36.7a10.7,10.7,0,0,0-.574-3.383Zm-64.86,51.2a7.689,7.689,0,1,1,7.833-7.687,7.751,7.751,0,0,1-7.833,7.687m57.444,0a7.689,7.689,0,1,1,7.833-7.687,7.751,7.751,0,0,1-7.833,7.687M10.444,30.75l6.632-19.578a5.286,5.286,0,0,1,4.961-3.485H71.962a5.286,5.286,0,0,1,4.961,3.485L83.556,30.75Z" fill="#181818"/>
+    </g>
+  </g>
+</svg>

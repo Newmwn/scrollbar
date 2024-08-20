@@ -1,0 +1,8 @@
+<svg id="icon_font_extensions_light" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+  <rect id="shape" width="100" height="100" fill="none"/>
+  <g id="icon" transform="translate(13.006)">
+    <path id="background" d="M12.881.61H45.963L74,30.145V87.591A12.937,12.937,0,0,1,61.143,100.61H12.881A12.942,12.942,0,0,1,0,87.591V13.629A12.942,12.942,0,0,1,12.881.61Z" transform="translate(0 -0.61)" fill="#e8e8e8" fill-rule="evenodd"/>
+    <path id="fold" d="M237.139.61V29.92H265.2Z" transform="translate(-191.201 -0.61)" fill="#0e1e31" fill-rule="evenodd" opacity="0.3"/>
+    <path id="icon-2" data-name="icon" d="M155.031,266.825l-16.816-36.339h-2.559l-16.085,36.339h-4.8v2.485h13.846v-2.485H122.4l4.113-9.362h15.308l4.3,9.362h-4.3v2.485h17.319v-2.485Zm-27.372-11.891,6.352-14.332,6.626,14.332Z" transform="translate(-100.048 -183.898)" fill="#0e1e31"/>
+  </g>
+</svg>

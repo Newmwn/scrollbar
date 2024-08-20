@@ -1,0 +1,8 @@
+<svg id="icon_txt_extension" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+  <rect id="shape" width="100" height="100" fill="none"/>
+  <g id="ps" transform="translate(13.006)">
+    <path id="Path_19936" data-name="Path 19936" d="M12.881.61H45.963L74,30.145V87.591A12.937,12.937,0,0,1,61.143,100.61H12.881A12.942,12.942,0,0,1,0,87.591V13.629A12.942,12.942,0,0,1,12.881.61Z" transform="translate(0 -0.61)" fill="#251d36" fill-rule="evenodd"/>
+    <path id="Path_19937" data-name="Path 19937" d="M237.139.61V29.92H265.2Z" transform="translate(-191.201 -0.61)" fill="rgba(255,255,255,0.3)" fill-rule="evenodd"/>
+    <path id="Path_20046" data-name="Path 20046" d="M73.451,293.024v-9.6H69.942V280.76H80.08v2.665H76.588v9.6Zm18.033,0H88.194l-2.244-3.762-2.244,3.762H80.4l3.9-6.545L80.89,280.76h3.29l1.771,2.969L87.7,280.76h3.306L87.6,286.5l3.88,6.528Zm3.812,0v-9.6H91.8V280.76h10.138v2.665H98.433v9.6Z" transform="translate(-48.948 -212.76)" fill="#fff"/>
+  </g>
+</svg>

@@ -1,0 +1,8 @@
+<svg id="icon_TTF_extension_light" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+  <rect id="shape" width="100" height="100" fill="none"/>
+  <g id="icon" transform="translate(13.006)">
+    <path id="background" d="M12.881.61H45.963L74,30.145V87.591A12.937,12.937,0,0,1,61.143,100.61H12.881A12.942,12.942,0,0,1,0,87.591V13.629A12.942,12.942,0,0,1,12.881.61Z" transform="translate(0 -0.61)" fill="#e8e8e8" fill-rule="evenodd"/>
+    <path id="fold" d="M237.139.61V29.92H265.2Z" transform="translate(-191.201 -0.61)" fill="#0e1e31" fill-rule="evenodd" opacity="0.3"/>
+    <path id="icon-2" data-name="icon" d="M82.165,285.242V269.726h-6.1v-4.281H93.685v4.281h-6.1v15.516Zm18.408,0V269.726h-6.1v-4.281h17.617v4.281H106v15.516Zm13.132,0v-19.8H128.86v4.281h-9.7v3.19h7.768V277.2h-7.768v8.044Z" transform="translate(-65.789 -201.343)" fill="#0e1e31"/>
+  </g>
+</svg>

@@ -1,0 +1,116 @@
+@import '../variables';
+@import 'tbu';
+
+.nc-tooltip {
+  cursor: text;
+  white-space: normal;
+
+  @mixin tooltip($text-max-width: null, $padding-vertical: null, $padding-horizontal: null, $padding-close: null) {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    padding: tbu(px($padding-vertical)) tbu(px($padding-horizontal));
+    border-radius: tbu(px(8));
+
+    &.nc-tooltip-right {
+      margin: 0 tbu(px(8));
+    }
+
+    &.nc-tooltip-left {
+      margin: 0 tbu(px(-8));
+    }
+
+    &.nc-tooltip-bottom {
+      margin: tbu(px(8)) 0;
+    }
+
+    &.nc-tooltip-top {
+      margin: tbu(px(-8)) 0;
+    }
+
+    .nc-tooltip-text {
+      max-width: 100%;
+      white-space: pre-line;
+      text-align: left;
+      // When a word is to large it does translineation
+      hyphens: auto;
+    }
+
+    .nc-tooltip-close-container {
+      transition: max-width 250ms ease-in-out;
+      .nc-tooltip-close {
+        margin-left: tbu(px($padding-close));
+        cursor: pointer;
+        svg {
+          width: auto;
+          height: auto;
+          fill: var(--c-scale-1_bg);
+        }
+      }
+    }
+  }
+  @mixin colors($background-color, $text-color) {
+    color: var(--#{$text-color}_txt);
+    background: var(--#{$background-color}_bg);
+  }
+  &.primary_dark {
+    @include colors(primary_dark, c-scale-1);
+  }
+  &.secondary_dark {
+    @include colors(secondary_dark, c-scale-1);
+  }
+  &.c-scale-11 {
+    @include colors(c-scale-11, c-scale-1);
+  }
+  &.c-scale-4 {
+    @include colors(c-scale-4, c-scale-11);
+  }
+  &.success_dark {
+    @include colors(success, c-scale-1);
+  }
+  &.warning_dark {
+    @include colors(warning, c-scale-1);
+  }
+  &.info_dark {
+    @include colors(info, c-scale-1);
+  }
+  &.error_dark {
+    @include colors(error, c-scale-1);
+  }
+  &.xsmall {
+    @include tooltip(110, 2, 4, 4);
+    .nc-tooltip-text {
+      font-size: tbu(px($font_size_1), 1);
+    }
+  }
+  &.small {
+    @include tooltip(110, 4, 6, 8);
+    .nc-tooltip-text {
+      font-size: tbu(px($font_size_1), 1);
+    }
+  }
+  &.regular {
+    @include tooltip(110, 6, 12, 8);
+    .nc-tooltip-text {
+      @include setFontSize(px($font_size_1));
+    }
+  }
+  &.medium {
+    @include tooltip(120, 8, 16, 12);
+    .nc-tooltip-text {
+      @include setFontSize(px($font_size_2));
+    }
+  }
+  &.large {
+    @include tooltip(140, 8, 16, 12);
+    .nc-tooltip-text {
+      @include setFontSize(px($font_size_3));
+    }
+  }
+  &.xlarge {
+    @include tooltip(140, 12, 20, 12);
+    .nc-tooltip-text {
+      @include setFontSize(px($font_size_3));
+    }
+  }
+}

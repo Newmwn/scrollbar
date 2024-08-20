@@ -1,0 +1,6 @@
+/* ************* BACKROUND COLOR ************* */
+@each $color, $value in $colors {
+  .bg-#{'' + $color} {
+    background-color: var(--#{$color}_bg) !important;
+  }
+}

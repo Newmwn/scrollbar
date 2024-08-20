@@ -1,0 +1,131 @@
+/*
+Theme Name: Desktop angular compoenents
+Description: text align, transform, weight, misc
+*/
+
+/****** stylelint-disable declaration-no-important *********/
+
+/****** Alignment *********/
+
+.t-justify {
+  text-align: justify !important;
+}
+.t-wrap {
+  white-space: normal !important;
+}
+.t-nowrap {
+  white-space: nowrap !important;
+}
+.t-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/****** Responsive alignment *********/
+
+@each $breakpoint in map-keys($newBreakPoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    .text#{$infix}-left {
+      text-align: left !important;
+    }
+    .text#{$infix}-right {
+      text-align: right !important;
+    }
+    .text#{$infix}-center {
+      text-align: center !important;
+    }
+  }
+}
+
+/****** Transformation *********/
+
+.t-lowercase {
+  text-transform: lowercase !important;
+}
+.t-uppercase {
+  text-transform: uppercase !important;
+}
+.t-capitalize {
+  text-transform: capitalize !important;
+}
+
+.t-italic {
+  font-style: italic !important;
+}
+
+/* ************* FONT WEIGHTS ************* */
+@each $weight, $value in $font-weight {
+  .t-w-#{$weight} {
+    font-weight: #{$value};
+  }
+}
+
+/****** Contextual colors *********/
+
+.t-white {
+  color: $white !important;
+}
+
+// @each $color, $value in $colors {
+//   @include text-emphasis-variant('.text-#{$color}', $value);
+// }
+
+/* ************* TEXT COLOR ************* */
+@each $color, $value in $colors {
+  .t-#{'' + $color} {
+    color: var(--#{'' + $color + '_txt'});
+  }
+}
+
+.t-black-50 {
+  color: rgba($black, 0.5) !important;
+}
+.t-white-50 {
+  color: rgba($black, 0.5) !important;
+}
+
+/****** Misc *********/
+
+.t-hide {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+
+.t-decoration-none {
+  text-decoration: none !important;
+}
+
+.t-break {
+  word-break: break-word !important; // IE & < Edge 18
+  overflow-wrap: break-word !important;
+}
+
+/****** Reset Color *********/
+
+.t-reset {
+  color: inherit !important;
+}
+
+/* ************* FONT FAMILY ************* */
+.t-primary {
+  font-family: var(--font_primary);
+}
+.t-secondary {
+  font-family: var(--font_secondary);
+}
+
+/* ************* FONT SIZES ************* */
+@each $size, $value in $font-sizes {
+  #{$size},
+  .#{$size} {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: tbu(px($value), 1);
+  }
+}

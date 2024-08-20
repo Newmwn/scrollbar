@@ -1,0 +1,63 @@
+{
+  "name": "@niup/devkit",
+  "version": "0.0.14",
+  "description": "Stencil Component Starter",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.js",
+  "es2015": "dist/esm/index.mjs",
+  "es2017": "dist/esm/index.mjs",
+  "es2022": "dist/esm/index.mjs",
+  "types": "dist/types/interface.d.ts",
+  "collection": "dist/collection/collection-manifest.json",
+  "collection:main": "dist/collection/index.js",
+  "unpkg": "dist/nc-devkit/nc-devkit.esm.js",
+  "files": [
+    "dist/",
+    "scss/",
+    "images/",
+    "themes/",
+    "fonts/",
+    "exclude-components.ts"
+  ],
+  "scripts": {
+    "test-lib": "stencil build && cd ./../nc-angular-devkit && npm run build",
+    "build": "stencil build --docs",
+    "buildWatch": "stencil build --docs --watch",
+    "build-angular": "npm run build && cd ./../-nc-angular-devkit && ng build nc-devkit",
+    "build-react": "npm run build && cd ./../nc-angular-devkit && ng build nc-devkit",
+    "build-publish": "npm run build && npm publish --registry http://npm.niup.local:4873 && npm version patch",
+    "build-publish-stg": "npm run build && npm unpublish @niup/devkit@0.0.1-NOME && npm publish --tag staging --registry http://npm.niup.local:4873",
+    "start": "stencil build --dev --watch --serve",
+    "test": "stencil test --spec --e2e",
+    "test.watch": "stencil test --spec --e2e --watchAll",
+    "generate": "stencil generate",
+    "publish-angular": "cd ./../nc-angular-devkit && npm run publish-library",
+    "publish-angular-stg": "cd ./../nc-angular-devkit && npm run publish-library-stg",
+    "publish-react": "cd ./../nc-react-devkit/nc-devkit && npm run publish-library",
+    "publish-react-stg": "cd ./../nc-react-devkit/nc-devkit && npm run publish-library-stg",
+    "publish-all": "npm run build-publish && npm run publish-angular && npm run publish-react",
+    "publish-all-stg": "npm run build-publish-stg && npm run publish-angular-stg && npm run publish-react-stg",
+    "update-stencil-versions": "npm i @stencil/core@latest @stencil/sass@latest && npm i @stencil/angular-output-target@latest @stencil/react-output-target@latest --save-dev"
+  },
+  "dependencies": {
+    "@stencil/core": "^4.20.0",
+    "@stencil/sass": "^3.0.12",
+    "@types/jest": "29.5.6",
+    "@types/node": "20.11.25",
+    "file-saver": "2.0.5",
+    "gridstack": "10.1.0",
+    "jest": "29.7.0",
+    "mousetrap-ts": "^1.0.0",
+    "rxjs": "7.8.1",
+    "xlsx": "0.18.5"
+  },
+  "devDependencies": {
+    "@stencil/angular-output-target": "^0.8.4",
+    "@stencil/react-output-target": "^0.5.3",
+    "@stencil/store": "^2.0.16",
+    "jest-cli": "29.7.0",
+    "puppeteer": "10.0.0",
+    "rollup-plugin-typescript": "^1.0.1"
+  },
+  "license": "MIT"
+}

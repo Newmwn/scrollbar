@@ -1,0 +1,17 @@
+/*
+Theme Name: Desktop angular compoenents
+Description: dividers h and w
+*/
+
+/****** break *********/
+.break-horizontal {
+  height: tbu(px(1));
+  width: 100%;
+  background: var(--c-scale-6_bg);
+}
+
+.break-vertical {
+  width: tbu(px(1));
+  height: 100%;
+  background: var(--c-scale-6_bg);
+}

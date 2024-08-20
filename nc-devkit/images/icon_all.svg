@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="19" height="5" viewBox="0 0 19 5">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #252525;
+      }
+    </style>
+  </defs>
+  <g id="all" transform="translate(-43 -279)">
+    <circle id="shape" class="cls-1" cx="2.5" cy="2.5" r="2.5" transform="translate(43 279)"/>
+    <circle id="shape-2" data-name="shape" class="cls-1" cx="2.5" cy="2.5" r="2.5" transform="translate(50 279)"/>
+    <circle id="shape-3" data-name="shape" class="cls-1" cx="2.5" cy="2.5" r="2.5" transform="translate(57 279)"/>
+  </g>
+</svg>
