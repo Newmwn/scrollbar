@@ -1,36 +1,157 @@
-@import '../../../scss/index.scss';
 @import '../../../scss/utilities/tbu';
+@import '../../../scss/variables';
+
+//Apply fade animation to the thumbs
+@mixin fadeAnimation($visibility, $opacity) {
+  .scrollbar-container {
+    .scrollbar-container--fake-scrollbarY {
+      &.onHoverWithTrack {
+        visibility: visible;
+        opacity: 1;
+      }
+      .scrollbar-container--fake-scrollbarY__thumb:not(.onAlways, :hover, :focus, :active) {
+        visibility: $visibility;
+        opacity: $opacity;
+      }
+    }
+    .scrollbar-container--fake-scrollbarX {
+      &.onHoverWithTrack {
+        visibility: visible;
+        opacity: 1;
+      }
+      .scrollbar-container--fake-scrollbarX__thumb:not(.onAlways, :hover, :focus, :active) {
+        visibility: $visibility;
+        opacity: $opacity;
+      }
+    }
+  }
+}
+
+//Common thumb style
+@mixin commonThumb($thumbColor) {
+  position: absolute;
+  background: $thumbColor;
+  border-radius: var(--thumb-border-radius);
+  transition: visibility 0.5s, opacity 0.5s;
+
+  &:not(.onAlways) {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  &:hover,
+  &:active {
+    transition: none;
+    visibility: visible;
+    opacity: 1;
+  }
+  &:hover {
+    background: var(--thumb-hover-color);
+  }
+  &:active {
+    background: var(--thumb-active-color);
+  }
+}
 
 :host {
   display: block;
   height: 100%;
   width: 100%;
-  padding: var(--padding);
   box-sizing: border-box;
-  position: relative;
 }
 
-.scrollbar-container {
-  height: var(--scrollHeight);
-  max-height: 100%;
-  overflow: auto;
-  &::-webkit-scrollbar {
-    display: none;
+.zoneToScroll {
+  display: block;
+  height: calc(100% - var(--scrollSpace));
+  width: calc(100% - var(--scrollSpace));
+  box-sizing: border-box;
+  position: relative;
+  padding: var(--padding);
+  &:hover,
+  &:focus,
+  &:active {
+    @include fadeAnimation(visible, 0.7);
   }
-  &--fake-scrollbar {
-    position: absolute;
-    top: 0;
-    right: calc(var(--padding) + tbu(px(2)));
-    width: 6px;
-    height: 100%;
-    &__thumb {
+  .scrollbar-container {
+    height: var(--scrollHeight);
+    max-height: 100%;
+    overflow: auto;
+    outline: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    &--fake-scrollbarY {
+      justify-content: center;
+      height: 100%;
+      width: var(--track-width);
       position: absolute;
       top: 0;
-      width: 100%;
-      height: var(--thumbSize);
-      background: gray;
+      right: calc(0px + var(--margin-gap));
+      background-color: var(--track-color);
+      border-radius: var(--track-border-radius);
+
+      &.onHover {
+        visibility: hidden;
+      }
+
+      &.onHoverWithTrack {
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0.5s, opacity 0.5s;
+      }
+
+      &__thumb {
+        height: var(--thumbSizeY);
+        width: var(--thumb-width);
+        top: 0;
+        @include commonThumb(var(--thumb-color));
+      }
+
+      &:hover {
+        background-color: var(--track-hover-color);
+        .scrollbar-container--fake-scrollbarY__thumb {
+          @include commonThumb(var(--thumb-hover-color));
+        }
+      }
+      &:active {
+        background-color: var(--track-active-color);
+      }
     }
-    &__track {
+    &--fake-scrollbarX {
+      align-items: center;
+      height: var(--track-width);
+      width: 100%;
+      position: absolute;
+      left: 0;
+      bottom: calc(0px + var(--margin-gap));
+      background-color: var(--track-color);
+      border-radius: var(--track-border-radius);
+
+      &.onHover {
+        visibility: hidden;
+      }
+
+      &.onHoverWithTrack {
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0.5s, opacity 0.5s;
+      }
+
+      &__thumb {
+        height: var(--thumb-width);
+        width: var(--thumbSizeX);
+        left: 0;
+        @include commonThumb(var(--thumb-color));
+      }
+      &:hover {
+        background-color: var(--track-hover-color);
+        .scrollbar-container--fake-scrollbarX__thumb {
+          @include commonThumb(var(--thumb-hover-color));
+        }
+      }
+      &:active {
+        background-color: var(--track-active-color);
+      }
     }
   }
 }
@@ -38,90 +159,4 @@
 .disabled {
   pointer-events: none;
   overflow: hidden;
-  opacity: 0.4;
-}
-
-/*
-Theme Name: Desktop angular compoenents
-Description: Scrollbar with Hover Transition Effect
-*/
-* {
-  &:has(> .scrollbar) {
-  }
-}
-
-.scrollbar {
-  width: 100%;
-  height: 100%;
-  padding: tbu(px(16));
-  box-sizing: border-box;
-
-  &.vertical {
-    border-left: tbu(px(8)) solid transparent;
-    border-right: tbu(px(2)) solid transparent;
-  }
-
-  &.horizontal {
-    border-bottom: tbu(px(2)) solid transparent;
-  }
-
-  // Apply only on CHROME AND SAFARI browsers
-  @supports (-webkit-font-smoothing: antialiased) {
-    overflow: auto;
-    &:not(.scrollbarTracker) {
-      overflow-x: hidden;
-    }
-
-    // General Scrollbar
-    &::-webkit-scrollbar {
-      width: tbu(px(6));
-      height: tbu(px(6));
-    }
-
-    // Scrollbar Tacker
-    &::-webkit-scrollbar-track {
-      background-color: var(--c-scale-6_bg);
-    }
-    &:not(.scrollbarTracker) {
-      &::-webkit-scrollbar-track {
-        background-color: transparent;
-      }
-    }
-
-    // Scrollbar Thumb
-    &::-webkit-scrollbar-thumb {
-      border-radius: tbu(px(10));
-      background-color: transparent;
-    }
-
-    // Scrollbar Thumb on hover
-    &::-webkit-scrollbar-thumb:hover {
-      background-color: transparent;
-    }
-    scrollbar-gutter: stable;
-  }
-
-  // Apply only on FIREFOX browser
-  @supports (-moz-appearance: none) {
-    overflow: hidden;
-    scrollbar-width: thin;
-    scrollbar-color: var(--c-scale-10_bg);
-    scrollbar-gutter: stable;
-  }
-
-  &:hover,
-  &:active,
-  &:focus {
-    overflow: auto;
-
-    // Apply only on CHROME AND SAFARI browsers
-    @supports (-webkit-font-smoothing: antialiased) {
-      &::-webkit-scrollbar-thumb {
-        background-color: var(--c-scale-10_bg);
-      }
-      &::-webkit-scrollbar-thumb:active {
-        background-color: var(--c-scale-11_bg);
-      }
-    }
-  }
 }
