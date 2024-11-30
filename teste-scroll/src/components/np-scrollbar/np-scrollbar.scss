@@ -82,7 +82,7 @@
     }
     &--fake-scrollbarY {
       justify-content: center;
-      height: 100%;
+      height: calc(100% - var(--margin-gap) - var(--track-width));
       width: var(--track-width);
       position: absolute;
       top: 0;
@@ -120,7 +120,7 @@
     &--fake-scrollbarX {
       align-items: center;
       height: var(--track-width);
-      width: 100%;
+      width: calc(100% - var(--margin-gap) - var(--track-width));
       position: absolute;
       left: 0;
       bottom: calc(0px + var(--margin-gap));

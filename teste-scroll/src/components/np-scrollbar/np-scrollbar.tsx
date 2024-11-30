@@ -94,7 +94,7 @@ export class NpScrollbar {
   @Watch('scrollStyleModel') watchScrollStyleModel(newValue: ScrollStyleModel) {
     this._scrollStyles = new ScrollStyleModel(newValue);
     this.scrollStylesYoApply = {
-      '--margin-gap': TBU.tbu(TBU.px(this._scrollStyles.scrollbar.marginGap)),
+      '--margin-gap': TBU.tbu(TBU.px(Math.max(this._scrollStyles.scrollbar.marginGap, Math.max(this._scrollStyles.thumb.width, this._scrollStyles.track.width) / 2))),
       '--thumb-width': `${this._scrollStyles.thumb.width}px`,
       '--thumb-color': `var(--${this._scrollStyles.thumb.color})`,
       '--thumb-hover-color': `var(--${this._scrollStyles.thumb.hoverColor})`,
@@ -128,6 +128,17 @@ export class NpScrollbar {
   //#endregion STATES
 
   //#region LOCAL VARIABLES
+  scrollMaxWidth: number = 0;
+  fullGap: number = 0;
+  containerBounds: any;
+  containerHeight: number = 0;
+  containerWidth: number = 0;
+  scrollHeight: number = 0;
+  scrollWidth: number = 0;
+  paddedContainerHeight: number = 0;
+  paddedContainerWidth: number = 0;
+  maxScrollTop: number = 0;
+  maxScrollLeft: number = 0;
   isDragging: boolean = false;
   scrollOrientation: string = 'vertical';
   //#endregion LOCAL VARIABLES
@@ -140,19 +151,15 @@ export class NpScrollbar {
   }
   componentDidLoad() {
     this.hasVerticalScrollbar = this.scrollContainer.scrollHeight > this.zoneToScroll.clientHeight;
-    // Calculate the ratio between container height and content height
-    const containerHeight = this.zoneToScroll.clientHeight;
-    const containerWidth = this.zoneToScroll.clientWidth;
-    const scrollHeight = this.scrollContainer.scrollHeight;
-    const scrollWidth = this.scrollContainer.scrollWidth;
-    if (scrollHeight > containerHeight) {
-      const ratio = containerHeight / scrollHeight;
+    this.handleCalculations();
+    if (this.scrollHeight > this.containerHeight) {
+      const ratio = this.containerHeight / this.scrollHeight;
       // Calculate the thumb size as a percentage of the container height
-      this.thumbSizeY = Math.max(ratio * containerHeight, 20); // Set a minimum size for the thumb
+      this.thumbSizeY = Math.max(ratio * this.containerHeight, 20); // Set a minimum size for the thumb
     }
-    if (scrollWidth > containerWidth) {
-      const ratio = containerWidth / scrollWidth;
-      this.thumbSizeX = Math.max(ratio * containerWidth, 20);
+    if (this.scrollWidth > this.containerWidth) {
+      const ratio = this.containerWidth / this.scrollWidth;
+      this.thumbSizeX = Math.max(ratio * this.containerWidth, 20);
     }
     this.scrollContainer.addEventListener('scroll', () => this.updateThumbPosition());
     document.addEventListener('mousemove', event => this.handleMouseMove(event));
@@ -166,24 +173,17 @@ export class NpScrollbar {
 
   //#region PUBLIC METHODS
   @Method() async scrollToPosition(x?: number, y?: number, isPercentage: boolean = false) {
-    const containerHeight = this.zoneToScroll.clientHeight;
-    const containerWidth = this.zoneToScroll.clientWidth;
-    const scrollHeight = this.scrollContainer.scrollHeight;
-    const scrollWidth = this.scrollContainer.scrollWidth;
-
-    const maxScrollTop = scrollHeight - containerHeight;
-    const maxScrollLeft = scrollWidth - containerWidth;
     let scrollTop: number;
     let scrollLeft: number;
 
     if (isPercentage) {
       // If position is a percentage, calculate the scrollTop and scrollLeft based on the max values
-      scrollTop = (y / 100) * maxScrollTop;
-      scrollLeft = (x / 100) * maxScrollLeft;
+      scrollTop = (y / 100) * this.maxScrollTop;
+      scrollLeft = (x / 100) * this.maxScrollLeft;
     } else {
       // If position is a pixel value, clamp it within the valid scroll range
-      scrollTop = Math.min(Math.max(y, 0), maxScrollTop);
-      scrollLeft = Math.min(Math.max(x, 0), maxScrollLeft);
+      scrollTop = Math.min(Math.max(y, 0), this.maxScrollTop);
+      scrollLeft = Math.min(Math.max(x, 0), this.maxScrollLeft);
     }
 
     // Scroll the container to the calculated position
@@ -200,9 +200,21 @@ export class NpScrollbar {
   //#endregion PUBLIC METHODS
 
   //#region COMPONENT FUNCTIONS
-
+  handleCalculations() {
+    this.containerBounds = this.zoneToScroll.getBoundingClientRect();
+    this.scrollMaxWidth = Math.max(this._scrollStyles.thumb.width, this._scrollStyles.track.width);
+    this.fullGap = this._scrollStyles.scrollbar.marginGap + this.scrollMaxWidth * 2;
+    this.containerHeight = this.zoneToScroll.clientHeight - this.fullGap;
+    this.containerWidth = this.zoneToScroll.clientWidth - this.fullGap;
+    this.scrollHeight = this.scrollContainer.scrollHeight; // - this.fullGap;
+    this.scrollWidth = this.scrollContainer.scrollWidth; // - this.fullGap;
+    this.paddedContainerHeight = this.containerBounds.height - this.fullGap;
+    this.paddedContainerWidth = this.containerBounds.width - this.fullGap;
+    this.maxScrollTop = this.scrollHeight - this.paddedContainerHeight + this.padding * 2;
+    this.maxScrollLeft = this.scrollWidth - this.paddedContainerWidth + this.padding * 2;
+  }
   handleMouseDown(event, orientation) {
-    event.preventDefault(); // Prevent default browser behavior
+    event.preventDefault();
     this.isDragging = true;
     this.scrollOrientation = orientation;
 
@@ -214,37 +226,37 @@ export class NpScrollbar {
 
   handleMouseMove(event) {
     if (this.isDragging) {
-      const containerBounds = this.zoneToScroll.getBoundingClientRect();
-      if (this.scrollOrientation == 'vertical') {
-        // Calculate the new Y position of the thumb within the container, accounting for mouseGap
-        const newY = event.clientY - containerBounds.top - this.mouseGapY;
+      if (this.scrollOrientation === 'vertical') {
+        // Calculate the padded container height
 
-        // Calculate the maximum Y position for the thumb
-        const maxY = containerBounds.height - this.thumbSizeY;
+        // Calculate the new Y position
+        const newY = event.clientY - this.containerBounds.top - this.mouseGapY;
 
-        // Clamp the new Y position so the thumb doesn't go outside the scrollbar bounds
+        // Maximum Y position, accounting for padding
+        const maxY = this.paddedContainerHeight - this.thumbSizeY;
+
+        // Clamp the new Y position
         const clampedY = Math.max(0, Math.min(newY, maxY));
 
-        // Set the thumb's position
+        // Update thumb position
         this.thumbY.style.top = `${clampedY}px`;
 
-        // Calculate the scroll percentage relative to the thumb's position
+        // Calculate scroll percentage and position
         const scrollPercentage = clampedY / maxY;
 
-        // Calculate the final scroll position in the content
-        const maxScrollTop = this.scrollContainer.scrollHeight - containerBounds.height;
-        let scrollPosition = scrollPercentage * maxScrollTop;
-        // Scroll the content based on the calculated position
+        const scrollPosition = scrollPercentage * this.maxScrollTop;
+        // Scroll the container
         this.scrollContainer.scrollTo({
           top: scrollPosition,
-          behavior: 'auto', // Use 'auto' for instant scrolling
+          behavior: 'auto',
         });
       } else if (this.scrollOrientation === 'horizontal') {
+        // Calculate the padded container height
         // Calculate the new X position of the thumb within the container, accounting for mouseGap
-        const newX = event.clientX - containerBounds.left - this.mouseGapX;
+        const newX = event.clientX - this.containerBounds.left - this.mouseGapX;
 
         // Calculate the maximum X position for the thumb
-        const maxX = containerBounds.width - this.thumbSizeX;
+        const maxX = this.paddedContainerWidth - this.thumbSizeX;
 
         // Clamp the new X position so the thumb doesn't go outside the scrollbar bounds
         const clampedX = Math.max(0, Math.min(newX, maxX));
@@ -256,38 +268,31 @@ export class NpScrollbar {
         const scrollPercentage = clampedX / maxX;
 
         // Calculate the final scroll position in the content
-        const maxScrollLeft = this.scrollContainer.scrollWidth - containerBounds.width;
-        const scrollPosition = scrollPercentage * maxScrollLeft;
+
+        const scrollPosition = scrollPercentage * this.maxScrollLeft;
 
         // Scroll the content based on the calculated position
         this.scrollContainer.scrollTo({
           left: scrollPosition,
-          behavior: 'auto', // Use 'auto' for instant scrolling
+          behavior: 'auto',
         });
       }
     }
   }
 
   updateThumbPosition() {
-    const containerHeight = this.zoneToScroll.clientHeight;
-    const containerWidth = this.zoneToScroll.clientWidth;
-    const scrollHeight = this.scrollContainer.scrollHeight;
-    const scrollWidth = this.scrollContainer.scrollWidth;
-
     if (this.hasVerticalScrollbar) {
-      const maxScrollTop = scrollHeight - containerHeight;
       const scrollTop = this.scrollContainer.scrollTop;
-      const scrollPercentage = scrollTop / maxScrollTop;
-      const maxThumbTop = containerHeight - this.thumbSizeY;
+      const scrollPercentage = scrollTop / this.maxScrollTop;
+      const maxThumbTop = this.containerHeight - this.thumbSizeY;
       const thumbTop = scrollPercentage * maxThumbTop;
       this.thumbY.style.top = `${Math.min(Math.max(thumbTop, 0), maxThumbTop)}px`;
     }
 
     if (this.hasHorizontalScrollbar) {
-      const maxScrollLeft = scrollWidth - containerWidth;
       const scrollLeft = this.scrollContainer.scrollLeft;
-      const scrollPercentage = scrollLeft / maxScrollLeft;
-      const maxThumbLeft = containerWidth - this.thumbSizeX;
+      const scrollPercentage = scrollLeft / this.maxScrollLeft;
+      const maxThumbLeft = this.containerWidth - this.thumbSizeX;
       const thumbLeft = scrollPercentage * maxThumbLeft;
       this.thumbX.style.left = `${Math.min(Math.max(thumbLeft, 0), maxThumbLeft)}px`;
     }

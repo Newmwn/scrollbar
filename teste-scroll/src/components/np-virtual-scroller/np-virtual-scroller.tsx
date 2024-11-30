@@ -1,17 +1,17 @@
 import { Component, Element, Event, EventEmitter, Host, Method, Prop, State, VNode, Watch, h } from '@stencil/core';
 import { TBU } from '../../utils/helpers/tbu';
 import { Direction } from '../../utils/misc/enums/direction.enum';
-import { NpVirtualKeyNav } from './helpers/np-virtual-key-nav/np-virtual-key-nav';
+import { NpVirtualKeyNav } from './helpers/np-virtual-key-nav';
 
 @Component({
   tag: 'np-virtual-scroller',
-  styleUrl: 'np-virtual-scroller.scss',
+  styleUrls: { desktop: 'np-virtual-scroller.scss' },
   shadow: true,
 })
-export class NpVirtualScrollerList {
+export class NpVirtualScroller {
   //#region Elements
-  @Element() host!: HTMLNpVirtualScrollerElement;
-  itemContainerRef!: HTMLDivElement;
+  @Element() host: HTMLNpVirtualScrollerElement;
+  itemContainerRef: HTMLDivElement;
   //#endregion Elements
 
   //#region PROPS
@@ -20,20 +20,20 @@ export class NpVirtualScrollerList {
   @Prop({ attribute: 'viewPortItems' }) viewPortItems: Array<any> = [];
   @Watch('viewPortItems') watchItems(newValue) {
     if (newValue.length === 0) {
-      this.scroll = 0;
+      this.scrollValue = 0;
       this.totalSize = 0;
       this.children = [];
       return;
     }
 
     // to render an ghost item to get the item dimension (width or height)
-    if (this[this.virtualScrolConfig?.itemMeasureType] == undefined) return;
+    if (this[this.virtualScrolConfig?.itemMeasureType] <= 0) return;
 
     this.updateScrollSize();
   }
 
   /** Array of unique Identifiers for comparation between items, This is used to optimize the list performance when adding, removing or changing the position of list items */
-  @Prop({ attribute: 'identifiers' }) identifiers: Array<any> = ['id'];
+  @Prop() identifiers: Array<any> = ['id'];
 
   /** this callback will emit the index of the list item to be rendered */
   @Prop({ attribute: 'itemTemplate' })
@@ -54,9 +54,10 @@ export class NpVirtualScrollerList {
 
   /** the gap between list items */
   _gap: number;
-  @Prop({ attribute: 'gap' }) gap: number = 12;
+  @Prop() gap: number = 12;
   @Watch('gap') watchGap(newGap: number) {
     this._gap = newGap;
+    this.updateScrollSize();
   }
 
   /** In case of direction === 'vertical', this will be the number of collumns. In case of direction === 'horizontal', this will be the number of rows */
@@ -67,7 +68,7 @@ export class NpVirtualScrollerList {
   }
 
   /** the direction of the virtuall scroller */
-  @Prop({ attribute: 'direction' }) direction: Direction = Direction.Vertical;
+  @Prop() direction: Direction = Direction.Vertical;
   @Watch('direction') watchDirection(newDirection: Direction) {
     if (this.keyboardNavigation && this.keyNav) {
       this.keyNav.config.direction = newDirection;
@@ -96,7 +97,7 @@ export class NpVirtualScrollerList {
    */
   @Prop({ attribute: 'isResizable' }) isResizable: boolean = false;
   @Watch('isResizable') watchIsResizable(isResizable) {
-    if (isResizable && this.scrollerResizeObserver == null && this.itemHeight != null && this.itemWidth != null) {
+    if (isResizable && this.scrollerResizeObserver == null) {
       this.observeScrollerResize();
     } else if (!isResizable && this.scrollerResizeObserver != null) {
       this.scrollerResizeObserver.disconnect();
@@ -150,6 +151,19 @@ export class NpVirtualScrollerList {
   /** Extra items to be rendered after and before the visible items */
   @Prop({ attribute: 'bufferItems' }) bufferItems?: number = 10;
 
+  /** The amout of delay time to be applied in the throtle funciton on list scroll events*/
+  @Prop({ attribute: 'scrollDelay' }) scrollDelay?: number = 100;
+
+  /** The amout of delay time to be applied in the throtle funciton on list resize events*/
+  @Prop({ attribute: 'resizeDelay' }) resizeDelay?: number = 100;
+
+  /** Used when there are items in the virtuall scroller that aren't view port items, so to make the key nav work (temporary fix) */
+  @Prop({ attribute: 'extraKeyNavIndex' }) extraKeyNavIndex?: number = 0;
+
+  /** If this is set to true, the initial event listeners won't be added */
+  @Prop({ attribute: 'ignoreInitialEventListeners' }) ignoreInitialEventListeners: boolean = false;
+
+
   //#endregion PROPS
 
   //#region EVENTS
@@ -163,8 +177,11 @@ export class NpVirtualScrollerList {
   /** Called when the user stops scrolling */
   @Event() scrollStopEvent: EventEmitter<any>;
 
-  /** Called when the height of the virtuall scroller changes */
-  @Event() scrollHeightChangeEvent: EventEmitter<any>;
+  /** Called when the height of the virtuall scroller changes and emits it */
+  @Event() scrollHeightChangeEvent: EventEmitter<number>;
+
+  /** Called when the height and width of the virtual scroll item is calculated */
+  @Event() itemSizeCalculatedEvent: EventEmitter<{ height: number, width: number }>;
 
   //#endregion EVENTS
 
@@ -185,16 +202,22 @@ export class NpVirtualScrollerList {
   };
 
   /** the scroll value */
-  scroll: number = 0;
+  scrollValue: number = 0;
 
   /** the total size of the scroll bar */
   totalSize: number = 1;
 
   /** Waiting args for throtle function */
-  waitingArgs: boolean = true;
+  scrollWaitingArgs: boolean = true;
+
+  /** Waiting args for throtle function */
+  resizeWaitingArgs: boolean = true;
 
   /** if true, scroll events will be ignore */
-  shouldWait: boolean = false;
+  scrollUpdateShouldWait: boolean = false;
+
+  /** if true, resize events will be ignore */
+  resizeUpdateShouldWait: boolean = false;
 
   /** this is neccessary because getItemMeasure was being executed multiple times
    * and i only needed to execute getItemMeasure one time, the ghost item's reference changed multiple times during execution */
@@ -204,7 +227,10 @@ export class NpVirtualScrollerList {
   firstScrollEvent: boolean = true;
 
   /** This variable stores the timeout used in the debounce function */
-  debounceTimeout: any;
+  scrollDebounceTimeout: any;
+
+  /** This variable stores the timeout used in the debounce function */
+  resizeDebouceTimeout: any;
 
   /**
    * Updates the rendered nodes the scroll value changes and when the itemPerGroup, viewPortItems and gap value changes
@@ -212,7 +238,9 @@ export class NpVirtualScrollerList {
    * @returns
    */
   updateList = () => {
-    const bufferItems = this.host.getBoundingClientRect()[this.virtualScrolConfig.measureType] > 0 ? this.bufferItems : this.bufferItems * 2 - 1;
+    if (this[this.virtualScrolConfig.itemMeasureType] <= 0) return;
+
+    const bufferItems = this.host.getBoundingClientRect()[this.virtualScrolConfig.measureType] > 0 && this.componentLoaded ? this.bufferItems : this.bufferItems * 2 - 1;
 
     // First and last node that are visible
     const firstVisibleNode = Math.floor(this.host[this.virtualScrolConfig.scrollType] / (this[this.virtualScrolConfig.itemMeasureType] + this._gap)) * this.itemsPerGroup;
@@ -220,13 +248,13 @@ export class NpVirtualScrollerList {
     const lastVisibleNode =
       Math.floor(
         (this.host[this.virtualScrolConfig.scrollType] + this.host.getBoundingClientRect()[this.virtualScrolConfig.measureType]) /
-          (this[this.virtualScrolConfig.itemMeasureType] + this._gap),
+        (this[this.virtualScrolConfig.itemMeasureType] + this._gap),
       ) * this.itemsPerGroup;
 
     // First and last node that are rendered (may not be visible)
-    const calculatingFirstVisibleNode = firstVisibleNode - bufferItems * this.itemsPerGroup < 0 ? 0 : firstVisibleNode - bufferItems * this.itemsPerGroup;
+    const calculatingFirstRenderedNode = firstVisibleNode - bufferItems * this.itemsPerGroup < 0 ? 0 : firstVisibleNode - bufferItems * this.itemsPerGroup;
     const firstRenderedNodePosition =
-      calculatingFirstVisibleNode % this.itemsPerGroup != 0 ? calculatingFirstVisibleNode - (calculatingFirstVisibleNode % this.itemsPerGroup) : calculatingFirstVisibleNode;
+      calculatingFirstRenderedNode % this.itemsPerGroup != 0 ? calculatingFirstRenderedNode - (calculatingFirstRenderedNode % this.itemsPerGroup) : calculatingFirstRenderedNode;
 
     const lastRenderedNodePosition =
       lastVisibleNode + bufferItems * this.itemsPerGroup > this.viewPortItems.length ? this.viewPortItems.length : lastVisibleNode + bufferItems * this.itemsPerGroup;
@@ -244,12 +272,12 @@ export class NpVirtualScrollerList {
     }
 
     if (this.children.length != newChildren.length) {
-      this.scroll = scroll;
+      this.scrollValue = scroll;
       this.children = [...newChildren];
     } else {
       for (let index = 0; index < this.children.length; index++) {
         if (this.children[index] != newChildren[index]) {
-          this.scroll = scroll;
+          this.scrollValue = scroll;
           this.children = [...newChildren];
           return;
         }
@@ -263,13 +291,21 @@ export class NpVirtualScrollerList {
       this.scrollStartEvent.emit($event);
       this.firstScrollEvent = false;
     }
-    this.scrollEvent.emit();
-    this.throttle(this.updateList);
-    this.debounce($event);
+    this.scrollEvent.emit($event);
+    this.scrollThrottle(this.updateList, this.scrollDelay);
+    this.scrollDebounce($event);
   };
 
   /** Called when the virtuall scroller is resized (more visible items means that more items need to be rendered, so that the scroller continues being fast) */
-  resizeCallback: EventListenerOrEventListenerObject = () => {
+  resizeCallback: Function = () => {
+    if (
+      this[this.virtualScrolConfig.itemMeasureType] <= 0 ||
+      this.itemContainerRef.getBoundingClientRect().width <= 0 ||
+      this.itemContainerRef.getBoundingClientRect().height <= 0 ||
+      (this.direction === Direction.Vertical ? this.itemWidth <= 0 : this.itemHeight <= 0)
+    )
+      return;
+
     const gapSize = this.itemsPerGroup * this._gap - this._gap;
     const size = (this.direction === Direction.Vertical ? this.itemContainerRef.getBoundingClientRect().width : this.itemContainerRef.getBoundingClientRect().height) - gapSize;
     const itemSize = this.direction === Direction.Vertical ? this.itemWidth : this.itemHeight;
@@ -286,9 +322,6 @@ export class NpVirtualScrollerList {
   /** Virtuall Scroller resize observer */
   scrollerResizeObserver: ResizeObserver;
 
-  /** Ghost item resize observer, used to get item's size */
-  ghostItemResizeObserver: ResizeObserver;
-
   /** this callback an item to populate the view port */
   renderViewPortItem: (item, index) => VNode;
 
@@ -301,32 +334,41 @@ export class NpVirtualScrollerList {
   /** The width of the virtuall scroller items, if the value is not set and it's an horizontal list or if it's a resizable list,
    * the width will be calculated, it's recomented in this case, if possible to specify the width, to improve performance
    */
-  itemWidth: number;
+  itemWidth: number = null;
 
   /** The height of the virtuall scroller items, if the value is not set and it's an vertical list or if it's a resizable list,
    * the height will be calculated, it's recomented in this case, if possible to specify the height, to improve performance
    */
-  itemHeight: number;
+  itemHeight: number = null;
+
+  /** Indicates that the components has finished loading */
+  componentLoaded: boolean = false;
+
+  /** Indicates that the virtual scroller is listening to scroll events */
+  scrollListener: boolean = false;
 
   //#endregion LOCAL VARIABLES
 
   //#region LIFE CYCLES
   connectedCallback() {
-    this.host.addEventListener('scroll', this.scrollCallback);
+    if (!this.ignoreInitialEventListeners) {
+      this.host.addEventListener('scroll', this.scrollCallback);
+      this.scrollListener = true;
+    }
   }
 
   componentWillLoad() {
     if (typeof this.itemTemplate === 'function') {
       this.renderViewPortItem = (item: any, index: number) => {
         return (
-          <div style={this.viewPortItemStyles} class="viewport-item" key={this.generateUniqueId(item)} {...{ index: index }}>
+          <div style={this.viewPortItemStyles} class="viewport-item" key={this.generateUniqueId(item)} data-index={index}>
             {this.itemTemplate(item, index)}
           </div>
         );
       };
       this.renderGhostItem = () => {
         return (
-          <div class="viewport-item" style={{ opacity: '0' }} ref={ref => this.getItemMeasure(ref)}>
+          <div class="viewport-item ghost-item" style={{ opacity: '0' }} ref={ref => this.getItemMeasure(ref)}>
             {this.itemTemplate(this.viewPortItems[0], 0)}
           </div>
         );
@@ -334,17 +376,18 @@ export class NpVirtualScrollerList {
     } else {
       this.renderViewPortItem = (item: any, index: number) => {
         return (
-          <div
-            style={this.viewPortItemStyles}
-            class="viewport-item"
-            key={this.generateUniqueId(item)}
-            {...{ index: index }}
-            innerHTML={this.renderAngularTemplate(item, index)}
-          ></div>
+          <div style={this.viewPortItemStyles} class="viewport-item" key={this.generateUniqueId(item)} data-index={index} innerHTML={this.renderAngularTemplate(item, index)}></div>
         );
       };
       this.renderGhostItem = () => {
-        return <div class="viewport-item" style={{ opacity: '0' }} ref={ref => this.getItemMeasure(ref)} innerHTML={this.renderAngularTemplate(this.viewPortItems[0], 0)}></div>;
+        return (
+          <div
+            class="viewport-item ghost-item"
+            style={{ opacity: '0' }}
+            ref={ref => this.getItemMeasure(ref)}
+            innerHTML={this.renderAngularTemplate(this.viewPortItems[0], 0)}
+          ></div>
+        );
       };
     }
 
@@ -357,8 +400,8 @@ export class NpVirtualScrollerList {
       this.keyNav == null &&
       this.keyboardNavigation &&
       !(
-        this[this.virtualScrolConfig.itemMeasureType] == undefined ||
-        (this.isResizable && ((this.direction === Direction.Horizontal && this.itemHeight == undefined) || (this.direction === Direction.Vertical && this.itemWidth == undefined)))
+        this[this.virtualScrolConfig.itemMeasureType] <= 0 ||
+        (this.isResizable && ((this.direction === Direction.Horizontal && this.itemHeight <= 0) || (this.direction === Direction.Vertical && this.itemWidth <= 0)))
       )
     ) {
       this.keyNav = new NpVirtualKeyNav({
@@ -370,22 +413,30 @@ export class NpVirtualScrollerList {
         itemsPerGroup: this.itemsPerGroup,
         direction: this.direction,
         focusFirstItem: this.focusFirstItem,
+        extraIndex: this.extraKeyNavIndex,
+        ignoreInitialEventListeners: this.ignoreInitialEventListeners
       });
     }
 
-    if (this.isResizable && this.scrollerResizeObserver == null && this.itemHeight != null && this.itemWidth != null) {
+    if (this.itemHeight > 0 && this.itemWidth > 0) {
+      this.componentLoaded = true;
+    }
+
+    if (!this.ignoreInitialEventListeners && this.isResizable && this.scrollerResizeObserver == null && this.itemHeight > 0 && this.itemWidth > 0) {
       this.observeScrollerResize();
     }
   }
+
   disconnectedCallback() {
-    this.host.removeEventListener('scroll', this.scrollCallback);
+    if (this.scrollListener) {
+      this.host.removeEventListener('scroll', this.scrollCallback);
+      this.scrollListener = false;
+    }
 
     if (this.keyboardNavigation && this.keyNav) {
       this.keyNav.destroyEventListeners();
       this.keyNav = null;
     }
-
-    this.scrollerResizeObserver = null;
 
     if (this.isResizable && this.scrollerResizeObserver != null) {
       this.scrollerResizeObserver.disconnect();
@@ -398,34 +449,59 @@ export class NpVirtualScrollerList {
   //#region FUNCTION
 
   /** Here we use a throttle method to reduce the times that the callback function is executed  */
-  throttle(callback) {
+  scrollThrottle(callback, timeout) {
+    if (this.scrollUpdateShouldWait) {
+      this.scrollWaitingArgs = true;
+      return;
+    }
+
     const timeoutFunc = () => {
-      if (!this.waitingArgs) {
-        this.shouldWait = false;
+      if (!this.scrollWaitingArgs) {
+        this.scrollUpdateShouldWait = false;
       } else {
         callback();
-        this.waitingArgs = false;
+        this.scrollWaitingArgs = false;
         setTimeout(timeoutFunc);
       }
     };
 
-    if (this.shouldWait) {
-      this.waitingArgs = true;
-      return;
-    }
     callback();
 
-    this.shouldWait = true;
+    this.scrollUpdateShouldWait = true;
 
-    setTimeout(timeoutFunc, 100);
+    setTimeout(timeoutFunc, timeout);
   }
 
-  debounce($event) {
-    clearTimeout(this.debounceTimeout);
-    this.debounceTimeout = setTimeout(() => {
+  /** Here we use a throttle method to reduce the times that the callback function is executed  */
+  resizeThrottle(callback, timeout) {
+    if (this.resizeUpdateShouldWait) {
+      this.resizeWaitingArgs = true;
+      return;
+    }
+
+    const timeoutFunc = () => {
+      if (!this.resizeWaitingArgs) {
+        this.resizeUpdateShouldWait = false;
+      } else {
+        callback();
+        this.resizeWaitingArgs = false;
+        setTimeout(timeoutFunc);
+      }
+    };
+
+    callback();
+
+    this.resizeUpdateShouldWait = true;
+
+    setTimeout(timeoutFunc, timeout);
+  }
+
+  scrollDebounce($event) {
+    clearTimeout(this.scrollDebounceTimeout);
+    this.scrollDebounceTimeout = setTimeout(() => {
       this.firstScrollEvent = true;
       this.scrollStopEvent.emit($event);
-    }, 300);
+    }, 150);
   }
 
   /** Updates the virtuall scroll's configs */
@@ -455,7 +531,7 @@ export class NpVirtualScrollerList {
 
   /** Updates the scroll size of the virtual scroller  */
   updateScrollSize() {
-    if (this[this.virtualScrolConfig.itemMeasureType] == undefined) return;
+    if (this[this.virtualScrolConfig.itemMeasureType] <= 0) return;
 
     const size = this[this.virtualScrolConfig.itemMeasureType] * Math.ceil(this.viewPortItems.length / this.itemsPerGroup);
 
@@ -477,20 +553,79 @@ export class NpVirtualScrollerList {
     if (totalSize != this.totalSize) this.scrollHeightChangeEvent.emit(totalSize);
 
     this.totalSize = totalSize;
+
     this.updateList();
   }
 
+  /** Observers virtual scroller resize events */
   observeScrollerResize() {
+    this.resizeCallback();
     this.scrollerResizeObserver = new ResizeObserver(() => {
-      this.throttle(this.resizeCallback);
+      this.resizeThrottle(this.resizeCallback, this.resizeDelay);
     });
     this.scrollerResizeObserver.observe(this.host);
   }
 
   /**
+   * Optimizes the list performance when adding, removing or changing the position of list items
+   * The item object
+   */
+  generateUniqueId(item: any) {
+    if (!this.identifiers?.length || !item) return '';
+
+    if (this.identifiers.length === 1) {
+      return item[this.identifiers[0]];
+    } else {
+      let uid = '';
+
+      this.identifiers.forEach(identifier => {
+        uid += `${item[identifier]}`;
+      });
+      return uid;
+    }
+  }
+
+  /**
+   * Gets the measure of the ghost item (opacity "0")
+   * @param itemRef - The reference of an item
+   */
+  getItemMeasure(itemRef) {
+    if (this.gettingItemMeausure || itemRef == null) return;
+
+    this.gettingItemMeausure = true;
+
+    const getMeasure = (observer) => {
+      const gap = window.getComputedStyle(this.itemContainerRef, null).getPropertyValue('gap').replace('px', '');
+      this._gap = !isNaN(Number(gap)) ? Number(gap) : 0;
+
+      const itemBoundingClientRect = itemRef.getBoundingClientRect();
+      this.itemHeight = itemBoundingClientRect.height;
+      this.itemWidth = itemBoundingClientRect.width;
+
+      if (this.itemHeight > 0 && this.itemWidth > 0) {
+        observer.disconnect();
+
+        this.itemSizeCalculatedEvent.emit({ height: this.itemHeight, width: this.itemWidth });
+
+        this.updateScrollSize();
+
+        setTimeout(() => {
+          this.gettingItemMeausure = false;
+        });
+      }
+    };
+
+    const ghostItemResizeObserver = new ResizeObserver((_entries, observer) => {
+      getMeasure(observer);
+    });
+
+    ghostItemResizeObserver.observe(itemRef);
+  }
+
+  /**
    * This function let's us automatically scroll to a position in the list
-   * @param scrollPosition
-   * @param scrollingBehavior
+   * @param scrollPosition - The position to scroll to
+   * @param scrollingBehavior - The browser's scrolling behaviour
    */
   @Method() async scrollToPosition(scrollPosition: number = 0, scrollingBehavior: 'smooth' | 'instant' | 'auto' = 'instant') {
     const top = this.direction === Direction.Vertical ? scrollPosition : 0;
@@ -501,34 +636,54 @@ export class NpVirtualScrollerList {
 
   /**
    * This function let's us automatically scroll to an item in the list via index
-   * @param index
-   * @param scrollingBehavior
+   * @param index - The index of the item
+   * @param scrollingBehavior - The browser's scrolling behaviour
    */
-  @Method() async scrollToIndex(index: number = 0, scrollingBehavior: 'smooth' | 'instant' | 'auto' = 'instant') {
-    const top = this.direction === Direction.Vertical && index != 0 ? index * this.itemHeight + index * this._gap : 0;
-    const left = this.direction === Direction.Horizontal && index != 0 ? index * this.itemWidth + index * this._gap : 0;
+
+  @Method() async scrollToIndex(index: number = 0, scrollingBehavior: 'smooth' | 'instant' | 'auto' = 'instant', itemIndex?: number) {
+    const top = this.direction === Direction.Vertical && index > 0 ? index * this.itemHeight + index * this._gap : 0;
+    const left = this.direction === Direction.Horizontal && index > 0 ? index * this.itemWidth + index * this._gap : 0;
 
     this.host.scroll({
       top: top,
       left: left,
       behavior: scrollingBehavior,
     });
+
+    if (itemIndex == null) return;
+
+    //This is used to fix an bug where the list doesn't correctly scroll to the given position
+    const scrolToItem = (item = null) => {
+      requestAnimationFrame(() => {
+        item = this.itemContainerRef.querySelector(`[data-index="${itemIndex}"]`);
+        if (item == null) {
+          scrolToItem(item);
+        } else {
+          item.scrollIntoView();
+        }
+      });
+    };
+
+    scrolToItem();
   }
 
   /**
    * This function let's us automatically scroll to an item in the list
-   * @param item
-   * @param scrollingBehavior
+   * @param item - The item object
+   * @param scrollingBehavior - The browser's scrolling behaviour
    */
   @Method() async scrollInto(item: any, scrollingBehavior: 'smooth' | 'instant' | 'auto' = 'instant') {
-    const index: number = this.viewPortItems.indexOf(item);
-    this.scrollToIndex(index, scrollingBehavior);
+    const itemIndex = this.viewPortItems.indexOf(item);
+    const index: number = Math.floor(itemIndex / this.itemsPerGroup);
+    this.scrollToIndex(index, scrollingBehavior, itemIndex);
   }
 
   /**
    * This function scroll to the previous item thats hidden
+   * @param scrollingBehavior - The scroll behaviour
+   * @param extraValue - Extra scrolling value
    */
-  @Method() async scrollToPreviousItem(scrollingBehavior: 'smooth' | 'instant' | 'auto' = 'instant', extraValue = 10 + this._gap) {
+  @Method() async scrollToPreviousItem(scrollingBehavior: 'smooth' | 'instant' | 'auto' = 'instant', extraValue: number = 10 + this._gap) {
     const firstVisibleNode = Math.ceil(this.host[this.virtualScrolConfig.scrollType] / (this[this.virtualScrolConfig.itemMeasureType] + this._gap));
     const accSize = this[this.virtualScrolConfig.itemMeasureType] * firstVisibleNode + this._gap * firstVisibleNode;
 
@@ -544,10 +699,12 @@ export class NpVirtualScrollerList {
 
   /**
    * This function scroll to the next item thats hidden
+   * @param scrollingBehavior - The browser's scrolling behaviour
+   * @param extraValue - Extra scrolling value
    */
   @Method() async scrollToNextItem(scrollingBehavior: 'smooth' | 'instant' | 'auto' = 'instant', extraValue = 10 + this._gap) {
     const firstVisibleNode = Math.floor(this.host[this.virtualScrolConfig.scrollType] / (this[this.virtualScrolConfig.itemMeasureType] + this._gap));
-    const accSize = this[this.virtualScrolConfig.itemMeasureType] * firstVisibleNode + this._gap * firstVisibleNode - this._gap;
+    const accSize = this[this.virtualScrolConfig.itemMeasureType] * firstVisibleNode + this._gap * firstVisibleNode;
 
     const top = this.direction === Direction.Vertical ? accSize + (this.itemHeight + this._gap + extraValue) : 0;
     const left = this.direction === Direction.Horizontal ? accSize + (this.itemWidth + this._gap + extraValue) : 0;
@@ -559,55 +716,41 @@ export class NpVirtualScrollerList {
     });
   }
 
-  /**
-   * Gets the measure of the ghost item (opacity "0")
-   * @param itemRef - The reference of an item
-   * @returns
+  /** This public function serves to manually add events listener, based on the virtual scroller configuration
+   * @param focusFirstItem - if true, the first item will be focused
    */
-  getItemMeasure(itemRef) {
-    if (this.gettingItemMeausure || itemRef == null) return;
+  @Method() async addEventListeners(focusFirstItem: boolean = false) {
+    if (!this.scrollListener) {
+      this.host.addEventListener('scroll', this.scrollCallback);
+      this.scrollListener = true;
+    }
+    if (this.isResizable && this.scrollerResizeObserver == null) this.observeScrollerResize();
 
-    const getMeasure = () => {
-      const gap = window.getComputedStyle(this.itemContainerRef, null).getPropertyValue('gap').replace('px', '');
-      this._gap = !isNaN(Number(gap)) ? Number(gap) : 0;
-
-      const itemBoundingClientRect = itemRef.getBoundingClientRect();
-      this.itemHeight = itemBoundingClientRect.height;
-      this.itemWidth = itemBoundingClientRect.width;
-
-      if (this.itemHeight && this.itemWidth) {
-        this.ghostItemResizeObserver.unobserve(itemRef);
-        this.updateScrollSize();
-
-        setTimeout(() => {
-          this.gettingItemMeausure = false;
-        });
-      }
-    };
-
-    this.ghostItemResizeObserver = new ResizeObserver(() => {
-      getMeasure();
-    });
-
-    this.ghostItemResizeObserver.observe(itemRef);
+    if (this.keyNav) {
+      this.keyNav.initEventListeners(focusFirstItem);
+    }
   }
 
-  /**
-   * Optimizes the list performance when adding, removing or changing the position of list items
-   */
-  generateUniqueId(item) {
-    if (!this.identifiers?.length) return '';
-
-    if (this.identifiers.length === 1) {
-      return item[this.identifiers[0]];
-    } else {
-      let uid = '';
-
-      this.identifiers.forEach(identifier => {
-        uid += `${item[identifier]}`;
-      });
-      return uid;
+  /** This public function removes the active events listener from the virtual scroller */
+  @Method() async removeEventListeners() {
+    if (this.scrollListener) {
+      this.host.removeEventListener('scroll', this.scrollCallback);
+      this.scrollListener = false;
     }
+
+    if (this.scrollerResizeObserver) {
+      this.scrollerResizeObserver.disconnect();
+      this.scrollerResizeObserver = null;
+    }
+
+    if (this.keyNav) {
+      this.keyNav.destroyEventListeners();
+    }
+  }
+
+  /** This public function returns the key nav helper */
+  @Method() async getKeyNav() {
+    return this.keyNav;
   }
 
   //#endregion FUNCTION
@@ -631,7 +774,7 @@ export class NpVirtualScrollerList {
   render() {
     const itemContainerStyles = {
       'gap': TBU.tbu(TBU.px(this._gap)),
-      'transform': `${this.virtualScrolConfig.translateType}(${TBU.tbu(TBU.px(this.scroll))})`,
+      'transform': `${this.virtualScrolConfig.translateType}(${TBU.tbu(TBU.px(this.scrollValue))})`,
       'grid-auto-flow': this.customAutoFlowStyle == null ? `${this.virtualScrolConfig.gridAutoFlowType}` : this.customAutoFlowStyle,
       [`${this.virtualScrolConfig.gridTemplateType}`]: this.customGridTemplateStyle == null ? `repeat(${this.itemsPerGroup}, 1fr)` : this.customGridTemplateStyle,
       ...this.itemContainerStyles,
@@ -656,10 +799,9 @@ export class NpVirtualScrollerList {
         >
           {
             // if the item height/width is not defined (undefined/null), this will render an ghost item (invisible) to get the item height/width
-            (this[this.virtualScrolConfig.itemMeasureType] == undefined ||
-              (this.isResizable &&
-                ((this.direction === Direction.Horizontal && this.itemHeight == undefined) || (this.direction === Direction.Vertical && this.itemWidth == undefined)))) &&
-            this.viewPortItems.length != 0
+            (this[this.virtualScrolConfig.itemMeasureType] <= 0 ||
+              (this.isResizable && ((this.direction === Direction.Horizontal && this.itemHeight <= 0) || (this.direction === Direction.Vertical && this.itemWidth <= 0)))) &&
+              this.viewPortItems.length != 0
               ? this.renderGhostItem()
               : null
           }
